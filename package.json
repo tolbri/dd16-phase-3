@@ -19,5 +19,8 @@
   "dependencies": {
     "autoprefixer": "^10.1.0",
     "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "tailwindcss-text-fill-stroke": "^1.1.2"
   }
 }
