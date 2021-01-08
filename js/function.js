@@ -1,7 +1,7 @@
 
 
-
-
+// Detects when element with class .video-waypoint
+// reaches the top of the browser.
 var waypoints = $('.video-waypoint').waypoint({
   handler: function(direction) {
 				$("body").css("overflow", "hidden");
@@ -10,15 +10,14 @@ var waypoints = $('.video-waypoint').waypoint({
   }
 })
 
-
-
-
+// Starts to play a video with the given ID
 function startVideo(video_id) {
 	$("#" + video_id).trigger("play");
-	console.log("Video: " + video_id + " is playing");
+	console.log("Video ID: " + video_id + " is playing");
 	};
 
-
+// Adds event listeners to all videos to
+// detect when they have finsihed to play.
 $("video").each(function(index) {
 	$(this).on("ended", function(e) {
 		modal = $(this).next();
