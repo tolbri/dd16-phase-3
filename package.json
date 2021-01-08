@@ -18,7 +18,8 @@
   "homepage": "https://github.com/tolbri/dd16-phase3#readme",
   "dependencies": {
     "autoprefixer": "^10.1.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "tailwindcss-text-fill-stroke": "^1.1.2"

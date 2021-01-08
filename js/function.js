@@ -1,28 +1,40 @@
-// init controller
-var controller = new ScrollMagic.Controller({
-  // addIndicators: true
-});
 
-// create a scene
-new ScrollMagic.Scene({
-	duration: 100, // the scene should last for a scroll distance of 100px
-	offset: 50 // start this scene after scrolling for 50px
+
+
+
+
+
+// var waypoint = new Waypoint({
+//   element: document.getElementByIdClassName("video_1"),
+//   handler: function() {
+// 		$("body").css("overflow", "hidden");
+// 		startVideo(this.element.id.toString());
+// 		this.destroy()
+//   }
+// })
+
+var waypoints = $('.video-waypoint').waypoint({
+  handler: function(direction) {
+				$("body").css("overflow", "hidden");
+				startVideo(this.element.id.toString());
+				this.destroy()
+  }
 })
-	.setPin('#my-sticky-element') // pins the element for the the scene's duration
-	.addTo(controller); // assign the scene to the controller
 
-  var iframe = document.querySelector('iframe');
-    var player = new Vimeo.Player(iframe);
 
-    player.on('play', function() {
-        console.log('played the video!');
-    });
 
-    player.getVideoTitle().then(function(title) {
-        console.log('title:', title);
-    });
 
-    player.on('ended', function(data) {
-      console.log("video has ended")
-    // data is an object containing properties specific to that event
+function startVideo(video_id) {
+	$("#" + video_id).trigger("play");
+	console.log("Video: " + video_id + " is playing");
+	};
+
+
+$("video").each(function(index) {
+	$(this).on("ended", function(e) {
+		modal = $(this).next();
+		$(this).toggleClass("hidden");
+		modal.toggleClass("hidden");
+		$("body").css("overflow", "auto");
+	});
 });
