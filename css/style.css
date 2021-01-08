@@ -1,5 +1,10 @@
 
-#section06 a span {
+/* Look at https://tailwindcss.com/ to style the website*/
+
+/*------------------------------- */
+/*---- Scroll Down Animation ---- */
+/*------------------------------- */
+#scroll-down a span {
   position: absolute;
   top: 0;
   left: 50%;

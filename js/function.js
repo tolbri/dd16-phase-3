@@ -2,17 +2,6 @@
 
 
 
-
-
-// var waypoint = new Waypoint({
-//   element: document.getElementByIdClassName("video_1"),
-//   handler: function() {
-// 		$("body").css("overflow", "hidden");
-// 		startVideo(this.element.id.toString());
-// 		this.destroy()
-//   }
-// })
-
 var waypoints = $('.video-waypoint').waypoint({
   handler: function(direction) {
 				$("body").css("overflow", "hidden");
