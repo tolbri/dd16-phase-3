@@ -18,8 +18,8 @@
   <section class="h-screen">
     <div class="container mx-auto h-full relative">
       <div class="flex flex-wrap flex-col content-center justify-center h-full">
-        <div class="">
-          <h1 class="text-9xl uppercase">Cool Title</h1>
+        <div>
+          <h1 class="lg:text-8xl md:text-4xl sm:text-2xl uppercase">Tiktokissed</h1>
         </div>
         <div id="scroll-down" class="text-center absolute inset-x-0 bottom-0 pb-5 pt-20">
           <a href="#" class="hover:underline"><span></span>Scroll</a>
@@ -27,39 +27,66 @@
       </div>
     </div>
   </section>
-  <section class="h-screen">
+  <section class="h-screen relative">
     <div class="container mx-auto h-full">
       <div class="flex flex-wrap content-center justify-center h-full">
-        <svg class="h-full w-full p-5 absolute" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="100" cy="50" rx="100" ry="50" />
-        </svg>
+        <div class="absolute h-full w-full">
+          <div class="relative h-full w-full">
+            <img class="h-full w-full absolute p-5" src="./assets/svg/ellipse.png" alt="ellipse" />
+            <img class="w-1/4 absolute left-24 z-10 animate-bounce" src="./assets/svg/sticker_hey.svg" alt="hey" />
+          </div>
+        </div>
         <div class="min-h-0 w-full z-10">
-          <h2 class="text-white text-center text-7xl uppercase">Hello <span class="">stranger</span> how did you end up here?</h2>
+          <h2 class="text-white text-center lg:text-5xl md:text-3xl sm:text-lg uppercase">Hello <span class="">stranger</span></br>how did you end up here?</h2>
         </div>
       </div>
     </div>
   </section>
   <section class="h-screen relative">
     <video id="video_1" class="video-waypoint min-w-screen min-h-screen absolute bg-black" muted controls preload="auto">
-      <source src="./assets/video/placeholder.mp4" type="video/mp4">
+      <source src="./assets/video/video_01.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="modal absolute inset-0 flex items-center justify-center hidden">
-      <div class="flex w-3/5 h-32 bg-red-600  shadow-xl text-center inline-block">
-        <span class="m-auto text-white text-3xl uppercase">Do you know what a conspiracy is?</span>
+    <div class="modal relative w-full h-full hidden">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="relative w-1/2 h-1/2">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img class="w-full absolute inset-y-0 m-auto z-10" src="./assets/svg/star.svg" alt="hey" />
+            <p class="absolute inset-x-0 m-auto z-20 text-white lg:text-3xl md:text-3xl sm:text-base text-center uppercase p-1">Do you know what a conspiracy is?</p>
+            <p class="absolute inset-x-0 bottom-0 m-auto z-20 text-white text-sm text-center uppercase p-3">Scroll Down</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <section class="h-screen">
+    <div class="container mx-auto h-full relative">
+      <div class="flex flex-wrap flex-col content-center justify-center h-full">
+        <div>
+          <h3 class="lg:text-5xl md:text-4xl sm:text-base uppercase p-5">
+            Conspiracy theory:</br>
+            An attempt to explain harmful
+            or tragic events as the result
+            of the actions of a small powerful group.</h3>
+          <p class="absolute bottom-0 right-0 p-5">britannica.com</p>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="h-screen relative">
     <video id="video_2" class="video-waypoint min-w-screen min-h-screen absolute bg-black" muted controls preload="auto">
-      <source src="./assets/video/sample.mp4" type="video/mp4">
+      <source src="./assets/video/video_03.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="modal absolute inset-0 flex items-center justify-center hidden">
-      <div class="flex w-3/5 h-32 bg-red-600  shadow-xl text-center inline-block">
-        <span class="m-auto text-white text-3xl uppercase">This is another text.</span>
+    <div class="modal relative w-full h-full hidden">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="relative w-1/2 h-1/2">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img class="w-full absolute inset-y-0 m-auto z-10" src="./assets/svg/star.svg" alt="hey" />
+            <p class="absolute inset-x-0 m-auto z-20 text-white lg:text-3xl md:text-3xl sm:text-base text-center uppercase p-1">Explore</br>the Piramideee</p>
+            <p class="absolute inset-x-0 bottom-0 m-auto z-20 text-white text-sm text-center uppercase p-3">Scroll Down</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
