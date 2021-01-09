@@ -1,4 +1,36 @@
+$.fn.followTo = function (pos) {
+    var $this = this;
+    var  $scrollHeight = $("#toolbox").prop("scrollHeight");
+    var $scrollBottom = $("#toolbox").scrollTop() + $("#toolbox").height();
+    $this.scroll(function (e) {
+      console.log($("#toolbox").prop("scrollHeight") + " = " + $("#toolbox").scrollTop());
+        if (562 == $("#toolbox").scrollTop()) {
+            $("body").css({
+                overflow:'scroll'
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
 
+$('#toolbox').followTo(0);
+
+var testo_waypoints = $('.testo-waypoint').waypoint({
+  handler: function(direction) {
+				$("body").css("overflow", "hidden");
+  }
+})
+
+var enablescrolling = $('#immagine').waypoint({
+  handler: function(direction) {
+    console.log("vai");
+				$("body").css("overflow", "scroll");
+  }
+})
 
 // Detects when element with class .video-waypoint
 // reaches the top of the browser.
@@ -26,3 +58,10 @@ $("video").each(function(index) {
 		$("body").css("overflow", "auto");
 	});
 });
+
+/* var stopscrolling = $('.stopscrolling').waypoint({
+  handler: function(direction) {
+    console.log("fermo");
+				$(".container_diverso").css("overflow", "hidden");
+  }
+}) */
