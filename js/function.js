@@ -1,18 +1,26 @@
+var block_flag = false;
+
+
 $.fn.followTo = function (pos) {
     var $this = this;
     var  $scrollHeight = $("#toolbox").prop("scrollHeight");
-    var $scrollBottom = $("#toolbox").scrollTop() + $("#toolbox").height();
+
     $this.scroll(function (e) {
-      console.log($("#toolbox").prop("scrollHeight") + " = " + $("#toolbox").scrollTop());
-        if (562 == $("#toolbox").scrollTop()) {
+      console.log($('#toolbox').scrollTop() + $('#toolbox').height());
+      console.log($("#toolbox").prop('scrollHeight') + "  ALTEZZA");
+      console.log($("#toolbox").scrollTop() + "   SCROLL TOP");
+      console.log($("#toolbox").height() - $("#toolbox").scrollTop());
+        if ($("#toolbox").height()*2 - $("#toolbox").scrollTop() == 0 ) {
+          block_flag=true
+          $('#toolbox').css("overflow", "hidden");
+            $('#toolbox').css("position", "static");
             $("body").css({
                 overflow:'scroll'
+
             });
-        } else {
-            $this.css({
-                position: 'fixed',
-                top: 0
-            });
+          //  $('#toolbox').css("padding-top", "0");
+
+
         }
     });
 };
@@ -21,10 +29,14 @@ $('#toolbox').followTo(0);
 
 var testo_waypoints = $('.testo-waypoint').waypoint({
   handler: function(direction) {
-				$("body").css("overflow", "hidden");
+        if (block_flag==false) {
+          $("body").css("overflow", "hidden");
+          $('#toolbox').css("overflow", "scroll");
+        }
+
   }
 })
-
+/*
 var enablescrolling = $('#immagine').waypoint({
   handler: function(direction) {
     console.log("vai");
