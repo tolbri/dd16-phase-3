@@ -16,5 +16,12 @@ module.exports = {
     require('autoprefixer'),
     require('tailwindcss-text-fill-stroke')(),
   ],
+  rotate: {
+    '24': '24deg',
+  },
+  colors: {
+  thepink: '#5c6ac4',
+  // ...
+}
 }
 }
