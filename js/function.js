@@ -65,7 +65,7 @@ function startVideo(video_id) {
 $("video").each(function(index) {
 	$(this).on("ended", function(e) {
 		modal = $(this).next();
-		$(this).toggleClass("hidden");
+		$(this).toggleClass("hidden");  //comment this to make the video stay
 		modal.toggleClass("hidden");
 		$("body").css("overflow", "auto");
 	});
