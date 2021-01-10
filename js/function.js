@@ -3,27 +3,23 @@ var block_flag = false;
 
 $.fn.followTo = function (pos) {
     var $this = this;
-    var  $scrollHeight = $("#toolbox").prop("scrollHeight");
 
     $this.scroll(function (e) {
-      console.log($('#toolbox').scrollTop() + $('#toolbox').height());
-      console.log($("#toolbox").prop('scrollHeight') + "  ALTEZZA");
-      console.log($("#toolbox").scrollTop() + "   SCROLL TOP");
-      console.log($("#toolbox").height() - $("#toolbox").scrollTop());
-        if ($("#toolbox").height()*2 - $("#toolbox").scrollTop() == 0 ) {
+        console.log("SCROLLHEIGHT: "+$("#toolbox").prop('scrollHeight'));
+        console.log("SCROLLTOP: "+$("#toolbox").scrollTop());
+        console.log("SCROLLHEIGHT-SCROLLTOP= " + ($("#toolbox").prop('scrollHeight') - $("#toolbox").scrollTop()));
+        console.log("HEIGHT: "+Math.round($("#toolbox").innerHeight()));
+        if ($("#toolbox").prop('scrollHeight') - $("#toolbox").scrollTop() == Math.round($("#toolbox").innerHeight()) ) {
           block_flag=true
           $('#toolbox').css("overflow", "hidden");
             $('#toolbox').css("position", "static");
             $("body").css({
                 overflow:'scroll'
-
             });
-          //  $('#toolbox').css("padding-top", "0");
-
-
-        }
+          }
     });
 };
+
 
 $('#toolbox').followTo(0);
 
@@ -36,6 +32,7 @@ var testo_waypoints = $('.testo-waypoint').waypoint({
 
   }
 })
+
 /*
 var enablescrolling = $('#immagine').waypoint({
   handler: function(direction) {
