@@ -94,3 +94,27 @@ $("video").each(function(index) {
 		$("body").css("overflow", "auto");
 	});
 });
+
+
+console.log("question 1 script is running!")
+Promise.all([d3.html("./index.html"), d3.html("./assets/svg/infographic.svg")])
+  .then(function([html, svgDocument]) {
+
+    let svgNode = svgDocument.querySelector("svg");
+    let container = document.querySelector("#infographic");
+    container.appendChild(svgNode);
+
+    let squares = d3.selectAll("svg > #squares > g")
+
+    squares.on("mouseover", function() {
+      let color = d3.select(this).attr("data-color");
+      d3.select(this).select("path").style("fill", color);
+    })
+
+    squares.on("mouseleave", function() {
+      d3.select(this).select("path").style("fill", "#bdbdbd");
+    })
+
+
+
+})
