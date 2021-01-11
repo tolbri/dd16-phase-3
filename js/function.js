@@ -72,7 +72,7 @@ var intro_waypoints = $('.intro_waypoint').waypoint({
 // reaches the top of the browser.
 var waypoints = $('.video-waypoint').waypoint({
   handler: function(direction) {
-				$("body").css("overflow", "hidden");
+				// $("body").css("overflow", "hidden");  //comment or uncomment to enable scroll stop
 				startVideo(this.element.id.toString());
 				this.destroy()
   }
@@ -89,7 +89,7 @@ function startVideo(video_id) {
 $("video").each(function(index) {
 	$(this).on("ended", function(e) {
 		modal = $(this).next();
-		$(this).toggleClass("hidden");  //comment this to make the video stay
+		// $(this).toggleClass("hidden");  //comment this to make the video stay
 		modal.toggleClass("hidden");
 		$("body").css("overflow", "auto");
 	});

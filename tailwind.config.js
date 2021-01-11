@@ -6,7 +6,14 @@ module.exports = {
       fontFamily: {
         'sans': ['Sporting Grotesque']
       },
-    extend: {},
+      colors: {
+        'dreamyellow':  '#DAFC53',
+        'dreamgreen':   '#2BFDAF',
+        'dreamred':     '#FD3C3E',
+        'dreamblue':    '#5EECFD',
+        'dreampink':    '#F980E6',
+        'dreamdarkblue':'#2D2DFF',
+      }
   },
   variants: {
     extend: {},
