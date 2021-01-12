@@ -112,13 +112,44 @@ Promise.all([d3.html("./index.html"), d3.html("./assets/svg/infographic.svg")])
     let squares = d3.selectAll("svg > #squares > g")
 
     squares.on("mouseover", function() {
-      let color = d3.select(this).attr("data-color");
-      d3.select(this).select("path").style("fill", color);
+      // check if the user is on the left or right
+      // side of the screen. Then put the image
+      // on the opposite site.
+        if (event.pageX > d3.select("body").node().getBoundingClientRect().width / 2) {
+          d3.select("#gif")
+            .classed("left-1/4", true)
+            .classed("right-1/4", false);
+        } else {
+          d3.select("#gif")
+            .classed("right-1/4", true)
+            .classed("left-1/4", false);
+        }
+
+      // get the ID of each square = name of conspiracy
+      let id = d3.select(this).attr("id");
+      // insert the ID into the image path
+      let path = "./assets/img/gifs/" + id + ".gif";
+      d3.select("#gif > img").attr("src", path);
+      console.log("Image loads from: " + path);
+      // make the image visible
+      d3.select("#gif").classed("hidden", false);
+
+      // lower the opacity of all squares except of the
+      // one in use. Then apply a colore fill
+      d3.selectAll("svg > #squares > g")
+        .style("opacity", "0.3");
+      d3.select(this).style("opacity", "1");
+      d3.select(this).select("path")
+        .style("fill", "#FD3C3E");
     })
 
     squares.on("mouseleave", function() {
-      d3.select(this).select("path").style("fill", "#bdbdbd");
+      // reset changes when mouse leaves
+      d3.select("#gif").classed("hidden", true);
+      d3.selectAll("svg > #squares > g")
+        .style("opacity", "1");
+      d3.select(this).select("path")
+        .style("opacity", "1")
+        .style("fill", "#bdbdbd");
     })
-
-
 })
