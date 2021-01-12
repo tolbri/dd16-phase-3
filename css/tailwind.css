@@ -4331,6 +4331,11 @@ video {
   line-height: 1;
 }
 
+.text-minuscolo {
+  font-size: 0.25rem;
+  line-height: 0.75rem;
+}
+
 .leading-3 {
   line-height: .75rem;
 }

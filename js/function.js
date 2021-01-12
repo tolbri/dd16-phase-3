@@ -121,5 +121,4 @@ Promise.all([d3.html("./index.html"), d3.html("./assets/svg/infographic.svg")])
     })
 
 
-
 })

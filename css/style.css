@@ -89,3 +89,34 @@
   left:50%;
   text-align: center;
 }
+
+.centred {
+  position: relative;
+  transform:translate(-50%, -50%);
+  left:50%;
+  text-align: center;
+}
+
+#quadrato {
+  height: 50vh;
+  width: calc(50vh);
+  position:relative;
+  background-color: #ffffff;
+  transform:translate(-50%,-50%) rotate(60deg);
+  top:50%;
+  left:50%;
+  z-index:0;
+  margin:0;
+}
+
+#back {
+  border:none;
+  transform:scale(0.5);
+  position: fixed;
+  top:0%;
+  left:0%;
+  margin:2vh;
+  z-index: 100;
+}
+
+button:focus { outline: none; }
