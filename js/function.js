@@ -112,13 +112,32 @@ Promise.all([d3.html("./index.html"), d3.html("./assets/svg/infographic.svg")])
     let squares = d3.selectAll("svg > #squares > g")
 
     squares.on("mouseover", function() {
-      let color = d3.select(this).attr("data-color");
-      d3.select(this).select("path").style("fill", color);
+      let id = d3.select(this).attr("id");
+
+
+      let path = "./assets/img/gifs/" + id + ".gif";
+      console.log("Image ID: " + path);
+      d3.select("#gif").classed("hidden", false);
+      d3.select("#gif > img").attr("src", path);
+
+      d3.selectAll("svg > #squares > g")
+        .style("opacity", "0.3");
+      d3.select(this).style("opacity", "1");
+      d3.select(this).select("path")
+        .style("fill", "#FD3C3E");
+
+
+
+
+
     })
 
     squares.on("mouseleave", function() {
-      d3.select(this).select("path").style("fill", "#bdbdbd");
+      d3.select("#gif").classed("hidden", true);
+      d3.selectAll("svg > #squares > g")
+        .style("opacity", "1");
+      d3.select(this).select("path")
+        .style("opacity", "1")
+        .style("fill", "#bdbdbd");
     })
-
-
 })
