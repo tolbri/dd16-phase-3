@@ -1,5 +1,7 @@
 var block_flag2 = false;
-
+console.log("HEIGHT: "+Math.round($("#container_diverso").innerHeight()));
+      var altezza_padding = Math.round($("#container_diverso").innerHeight()) + "px";
+      $('#toolbox').css("padding-top", altezza_padding);
 
 $.fn.followTo = function (pos) {
     var $this = this;
@@ -49,6 +51,7 @@ $.fn.followTo = function (pos) {
           block_flag=true
           $('#toolbox').css("overflow", "hidden");
             $('#toolbox').css("position", "absolute");
+
             $("body").css({
                 overflow:'scroll'
             });
