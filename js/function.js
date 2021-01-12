@@ -117,12 +117,12 @@ Promise.all([d3.html("./index.html"), d3.html("./assets/svg/infographic.svg")])
       // on the opposite site.
         if (event.pageX > d3.select("body").node().getBoundingClientRect().width / 2) {
           d3.select("#gif")
-            .classed("left-10", true)
-            .classed("right-10", false);
+            .classed("left-1/4", true)
+            .classed("right-1/4", false);
         } else {
           d3.select("#gif")
-            .classed("right-10", true)
-            .classed("left-10", false);
+            .classed("right-1/4", true)
+            .classed("left-1/4", false);
         }
 
       // get the ID of each square = name of conspiracy
