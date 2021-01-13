@@ -1,23 +1,26 @@
+$(document).ready(function(){
+    $(this).scrollTop(0);
+    $("body").css("overflow", "scroll");
+});
+
 var block_flag2 = false;
-console.log("HEIGHT: "+Math.round($("#container_diverso").innerHeight()));
-      var altezza_padding = Math.round($("#container_diverso").innerHeight()) + "px";
+console.log("HEIGHT: "+Math.round($("#diverso").innerHeight()));
+      var altezza_padding = Math.round($("#diverso").innerHeight()) + "px";
       $('#toolbox').css("padding-top", altezza_padding);
 
 $.fn.followTo = function (pos) {
     var $this = this;
 
     $this.scroll(function (e) {
-        console.log("SCROLLHEIGHT: "+$("#intro2").prop('scrollHeight'));
+      /*  console.log("SCROLLHEIGHT: "+$("#intro2").prop('scrollHeight'));
         console.log("SCROLLTOP: "+$("#intro2").scrollTop());
         console.log("SCROLLHEIGHT-SCROLLTOP= " + ($("#intro2").prop('scrollHeight') - $("#intro2").scrollTop()));
-        console.log("HEIGHT: "+Math.round($("#intro2").innerHeight()));
+        console.log("HEIGHT: "+Math.round($("#intro2").innerHeight())); */
         if ($("#intro2").prop('scrollHeight') - $("#intro2").scrollTop() == Math.round($("#intro2").innerHeight()) ) {
-          block_flag2=true
+          block_flag2=true;
           $('#intro2').css("overflow", "hidden");
             $('#intro2').css("position", "absolute");
-            $("body").css({
-                overflow:'scroll'
-            });
+            $("body").css("overflow", "scroll");
           }
     });
 };
@@ -28,7 +31,7 @@ $('#intro2').followTo(0);
 var intro_waypoints = $('.intro_waypoint').waypoint({
   handler: function(direction) {
         if (block_flag2==false) {
-          console.log("funziona");
+          console.log("intro");
           $("body").css("overflow", "hidden");
           $('#intro2').css("overflow", "scroll");
         }
@@ -48,13 +51,10 @@ $.fn.followTo = function (pos) {
         console.log("SCROLLHEIGHT-SCROLLTOP= " + ($("#toolbox").prop('scrollHeight') - $("#toolbox").scrollTop()));
         console.log("HEIGHT: "+Math.round($("#toolbox").innerHeight()));*/
         if ($("#toolbox").prop('scrollHeight') - $("#toolbox").scrollTop() == Math.round($("#toolbox").innerHeight()) ) {
-          block_flag=true
+          block_flag=true;
           $('#toolbox').css("overflow", "hidden");
             $('#toolbox').css("position", "absolute");
-
-            $("body").css({
-                overflow:'scroll'
-            });
+            $("body").css("overflow", "scroll");
           }
     });
 };
@@ -65,6 +65,7 @@ $('#toolbox').followTo(0);
 var testo_waypoints = $('.testo-waypoint').waypoint({
   handler: function(direction) {
         if (block_flag==false) {
+          console.log("testo");
           $("body").css("overflow", "hidden");
           $('#toolbox').css("overflow", "scroll");
         }
@@ -77,14 +78,14 @@ var testo_waypoints = $('.testo-waypoint').waypoint({
 var waypoints = $('.video-waypoint').waypoint({
   handler: function(direction) {
 				// $("body").css("overflow", "hidden");  //comment or uncomment to enable scroll stop
-				startVideo(this.element.id.toString());
+			//	startVideo(this.element.id.toString());
 				this.destroy()
   }
 })
 
 // Starts to play a video with the given ID
 function startVideo(video_id) {
-	$("#" + video_id).trigger("play");
+	// $("#" + video_id).trigger("play");
 	console.log("Video ID: " + video_id + " is playing");
 	};
 
@@ -96,7 +97,7 @@ $("video").each(function(index) {
 		// $(this).toggleClass("hidden");
     //comment this to make the video stay
 	//	modal.toggleClass("hidden");
-		$("body").css("overflow", "auto");
+		$("body").css("overflow", "scroll");
 	});
 });
 

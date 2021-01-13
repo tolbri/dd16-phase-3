@@ -53,8 +53,8 @@
     </div> -->
   </section>
   <section class="h-screen relative">
-    <video id="video_1" class="video-waypoint min-w-screen min-h-screen absolute bg-black" autoplay controls preload="auto">
-      <source src="./assets/video/video_01.mp4" type="video/mp4">
+    <video id="video_1" class="video-waypoint min-w-screen min-h-screen absolute bg-black" controls preload="auto">
+      <source src="./assets/video/Video1+2_audio.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="modal relative w-full h-full hidden">
@@ -84,7 +84,32 @@
     </div>
   </section>
   <section class="h-screen relative">
-    <video id="video_2" class="video-waypoint min-w-screen min-h-screen absolute bg-black" autoplay controls preload="auto">
+    <video id="video_2" class="video-waypoint min-w-screen min-h-screen absolute bg-black" controls preload="auto" preload="metadata">
+      <source src="./assets/video/Video_2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="modal relative w-full h-full hidden">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="relative w-1/2 h-1/2">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img class="w-full absolute inset-y-0 m-auto z-10" src="./assets/svg/star.svg" alt="hey" />
+            <p class="absolute inset-x-0 m-auto z-20 text-white lg:text-3xl md:text-3xl sm:text-base text-center uppercase p-1">Explore</br>the Piramideee</p>
+            <p class="absolute inset-x-0 bottom-0 m-auto z-20 text-white text-sm text-center uppercase p-3">Scroll Down</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="h-full w-screen relative cursor-crosshair">
+    <div id="infographic" class="h-full w-full">
+    </div>
+    <div id="gif" class="hidden absolute top-1/4 z-10">
+      <img src="./assets/img/gifs/chemtrails.gif" alt="" class="h-1/4 w-auto shadow-xl" />
+    </div>
+  </section>
+  <section class="h-screen relative">
+    <video id="video_3" class="video-waypoint min-w-screen min-h-screen absolute bg-black" controls preload="auto">
       <source src="./assets/video/video_03.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -100,15 +125,8 @@
       </div>
     </div>
   </section>
-  <section class="h-full w-screen relative cursor-crosshair">
-    <div id="infographic" class="h-full w-full">
-    </div>
-    <div id="gif" class="hidden absolute top-1/4 z-10">
-      <img src="./assets/img/gifs/chemtrails.gif" alt="" class="h-1/4 w-auto shadow-xl" />
-    </div>
-  </section>
   <section class="h-screen">
-    <div id="container_diverso" class="testo-waypoint">
+    <div id="diverso" class="testo-waypoint">
       <div id="navi" class="p-absolute z-0 flex w-full h-full text-center">
         <span class="m-auto px-5 text-black lg:text-5xl md:text-4xl sm:text-base uppercase"> As you can see it’s difficult to distinguish <br /> between normal and conspiracies theory videos <br /> in the fast scrolling. <br />
           Let’s take a closer look to spot <br/> some characteristics that can help you identify conspiracy theory videos. </span>
@@ -124,7 +142,7 @@
     <div id="datasets" class="p-relative z-50 h-screen">
       <a href="#">
         <div class="p-relative z-50 flex w-full h-1/3 text-center inline-block bg-dreamgreen hover:opacity-75">
-          <span class="m-auto text-black text-base">#covidhoax</span>
+          <span class="m-auto text-black text-base">#wayfair</span>
         </div>
       </a>
       <a href="#">
@@ -134,7 +152,7 @@
       </a>
       <a href="wayfair.html">
         <div class="flex w-full h-1/3 text-center inline-block bg-dreamyellow hover:opacity-75">
-          <span class="m-auto text-black text-base">#wayfair</span>
+          <span class="m-auto text-black text-base">#covidhoax</span>
         </div>
       </a>
     </div>
