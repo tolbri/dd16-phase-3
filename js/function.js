@@ -1,12 +1,5 @@
-$(document).ready(function(){
-    $(this).scrollTop(0);
-    $("body").css("overflow", "scroll");
-});
-
 var block_flag2 = false;
-console.log("HEIGHT: "+Math.round($("#diverso").innerHeight()));
-      var altezza_padding = Math.round($("#diverso").innerHeight()) + "px";
-      $('#toolbox').css("padding-top", altezza_padding);
+
 
 $.fn.followTo = function (pos) {
     var $this = this;
@@ -46,10 +39,11 @@ $.fn.followTo = function (pos) {
     var $this = this;
 
     $this.scroll(function (e) {
-      /*  console.log("SCROLLHEIGHT: "+$("#toolbox").prop('scrollHeight'));
+        console.log(block_flag);
+        console.log("SCROLLHEIGHT: "+$("#toolbox").prop('scrollHeight'));
         console.log("SCROLLTOP: "+$("#toolbox").scrollTop());
         console.log("SCROLLHEIGHT-SCROLLTOP= " + ($("#toolbox").prop('scrollHeight') - $("#toolbox").scrollTop()));
-        console.log("HEIGHT: "+Math.round($("#toolbox").innerHeight()));*/
+        console.log("HEIGHT: "+Math.round($("#toolbox").innerHeight()));
         if ($("#toolbox").prop('scrollHeight') - $("#toolbox").scrollTop() == Math.round($("#toolbox").innerHeight()) ) {
           block_flag=true;
           $('#toolbox').css("overflow", "hidden");
@@ -65,6 +59,7 @@ $('#toolbox').followTo(0);
 var testo_waypoints = $('.testo-waypoint').waypoint({
   handler: function(direction) {
         if (block_flag==false) {
+          console.log(block_flag);
           console.log("testo");
           $("body").css("overflow", "hidden");
           $('#toolbox').css("overflow", "scroll");
