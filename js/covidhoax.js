@@ -55,12 +55,12 @@ document.getElementById('covid1').addEventListener('ended',myHandler,false);
 
         d3.select("#concl_1").on('click',function(e){
             e.preventDefault();
-          location.href = "index.html#datasets";
+          location.href = "index.html#diverso";
           });
 
         d3.select("#concl_2").on('click',function(e){
             e.preventDefault();
-          location.href = "index.html#datasets";
+          location.href = "index.html#diverso";
           });
 
       })

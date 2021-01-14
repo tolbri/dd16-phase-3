@@ -14,6 +14,7 @@ $.fn.followTo = function (pos) {
           $('#intro2').css("overflow", "hidden");
             $('#intro2').css("position", "absolute");
             $("body").css("overflow", "scroll");
+            block_flag.destroy();
           }
     });
 };
@@ -49,6 +50,7 @@ $.fn.followTo = function (pos) {
           $('#toolbox').css("overflow", "hidden");
             $('#toolbox').css("position", "absolute");
             $("body").css("overflow", "scroll");
+            block_flag2.destroy();
           }
     });
 };
