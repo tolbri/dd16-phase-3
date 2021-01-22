@@ -29,5 +29,25 @@ Promise.all([d3.html("./about.html"), d3.html("./assets/svg/menu.svg")])
         $("html, body").animate({ scrollTop: $('#section_name').offset().top }, 1000);
       });
 
+      d3.select("#Research").on('click',function(e){
+          e.preventDefault();
+          $("html, body").animate({ scrollTop: $('#section_research').offset().top }, 1000);
+        });
+
+        d3.select("#Concept").on('click',function(e){
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: $('#section_concept').offset().top }, 1000);
+          });
+
+          d3.select("#Output").on('click',function(e){
+              e.preventDefault();
+              $("html, body").animate({ scrollTop: $('#section_output').offset().top }, 1000);
+            });
+
+            d3.select("#Team").on('click',function(e){
+                e.preventDefault();
+                $("html, body").animate({ scrollTop: $('#section_team').offset().top }, 1000);
+              });
+
 
   })
