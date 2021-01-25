@@ -29,9 +29,5 @@ module.exports = {
   rotate: {
     '24': '24deg',
   },
-  colors: {
-  thepink: '#5c6ac4',
-  // ...
-}
 }
 }
