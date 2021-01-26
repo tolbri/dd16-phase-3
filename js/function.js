@@ -1,5 +1,3 @@
-
-
 gsap.registerPlugin(ScrollTrigger)
 
 let container = document.getElementById("horizontal-scroll");
@@ -8,23 +6,101 @@ gsap.to(container, {
   x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
 
   scrollTrigger: {
+    markers: true, // Easaly remove markers for production
     start: "center center",
     trigger: container,
     invalidateOnRefresh: true,
     pin: true,
-    scrub: 0,
+    scrub: true,
     anticipatePin: 1, // can help avoid flash
     end: () => "+=" + container.offsetWidth
   }
 })
 
+let yellowStar = document.getElementById("yellowZoom");
+const yellowTimeline = gsap.timeline({
+  scrollTrigger: {
+    markers: true,
+    trigger: yellowStar, // What element triggers the scroll
+    scrub: true, // Add a small delay of scrolling and animation. `true` is direct
+    start: "center center", // Start at top of Trigger and at the top of the viewport
+    pin: true, // Pin the element true or false
+    end: () => "+=" + yellowStar.offsetWidth
+  }
+});
+
+yellowTimeline
+  .to("#yellowZoomImg", {
+    scale: 5
+  })
+
+let blueStar = document.getElementById("blueZoom");
+const blueTimeline = gsap.timeline({
+  scrollTrigger: {
+    markers: true,
+    trigger: blueStar, // What element triggers the scroll
+    scrub: true, // Add a small delay of scrolling and animation. `true` is direct
+    start: "center center", // Start at top of Trigger and at the top of the viewport
+    pin: true, // Pin the element true or false
+    end: () => "+=" + blueStar.offsetWidth
+  }
+});
+
+blueTimeline
+  .to("#blueZoomImg", {
+    scale: 5
+  })
 
 
 
+let greenStar = document.getElementById("greenZoom");
+const greenTimeline = gsap.timeline({
+  scrollTrigger: {
+    markers: true,
+    trigger: greenStar, // What element triggers the scroll
+    scrub: true, // Add a small delay of scrolling and animation. `true` is direct
+    start: "center center", // Start at top of Trigger and at the top of the viewport
+    pin: true, // Pin the element true or false
+    end: () => "+=" + greenStar.offsetWidth
+  }
+});
+
+greenTimeline
+  .to("#greenZoomImg", {
+    scale: 5
+  })
+
+const ending = document.getElementById("end");
+gsap.utils.toArray(".panel").forEach((panel, i) => {
+  const pinTimeline = gsap.timeline({
+    scrollTrigger: {
+      markers: true,
+      trigger: panel, // What element triggers the scroll
+      scrub: true, // Add a small delay of scrolling and animation. `true` is direct
+      start: "center center", // Start at top of Trigger and at the top of the viewport
+      pin: true, // Pin the element true or false
+      pinSpacing: false,
+      endTrigger: ending,
+      end: "top center"
+    }
+  });
+});
 
 
+const modal = document.querySelector('.modal');
 
+const showModal = document.querySelector('.show-modal');
+const closeModal = document.querySelectorAll('.close-modal');
 
+showModal.addEventListener('click', function() {
+  modal.classList.remove('hidden')
+});
+
+closeModal.forEach(close => {
+  close.addEventListener('click', function() {
+    modal.classList.add('hidden')
+  });
+});
 
 
 
