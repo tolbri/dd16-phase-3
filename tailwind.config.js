@@ -15,19 +15,22 @@ module.exports = {
         'dreamred':     '#FD3C3E',
         'dreamblue':    '#5EECFD',
         'dreampink':    '#F980E6',
-        'dreamdarkblue':'#2D2DFF',
-      }
+        'dreamdarkblue':'#077AF2',
+      },
+      zIndex: {
+        '-10': '-10',
+        }
   },
   variants: {
-    extend: {},
+    extend: {
+      bottom: ['hover'],
+      inset: ['hover']
+    }
   },
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
     require('tailwindcss-text-fill-stroke')(),
   ],
-  rotate: {
-    '24': '24deg',
-  },
 }
 }
