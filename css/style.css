@@ -1,4 +1,41 @@
 
+div.a {
+width: 12%;
+height:auto;
+
+position:fixed;
+
+}
+
+div.b {
+width: 12%;
+height:auto;
+
+position:fixed;
+
+}
+div.c {
+width: 12%;
+height:auto;
+
+position:fixed;
+
+}
+div.d {
+width: 12%;
+height:auto;
+
+position:fixed;
+
+}
+div.e {
+width: 12%;
+height:auto;
+
+position:fixed;
+
+}
+
 /* Look at https://tailwindcss.com/ to style the website*/
 
 /*------------------------------- */

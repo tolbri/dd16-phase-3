@@ -10879,7 +10879,7 @@ video {
 }
 
 .rounded-3xl {
-  border-radius: 1.5rem;
+  border-radius: 4rem;
 }
 
 .rounded-full {
@@ -12054,7 +12054,7 @@ video {
 
 .text-3xl {
   font-size: 1.875rem;
-  line-height: 3.4rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -12069,7 +12069,7 @@ video {
 
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 4.5rem;
+  line-height: 1;
 }
 
 .text-7xl {
@@ -43720,7 +43720,7 @@ video {
 
   .sm\:text-3xl {
     font-size: 1.875rem;
-    line-height: 3.4rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
@@ -43735,7 +43735,7 @@ video {
 
   .sm\:text-6xl {
     font-size: 3.75rem;
-    line-height: 4.5rem;
+    line-height: 1;
   }
 
   .sm\:text-7xl {
@@ -75308,7 +75308,7 @@ video {
 
   .md\:text-3xl {
     font-size: 1.875rem;
-    line-height: 3.4rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -75318,12 +75318,12 @@ video {
 
   .md\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .md\:text-6xl {
     font-size: 3.75rem;
-    line-height: 4.5rem;
+    line-height: 1;
   }
 
   .md\:text-7xl {
@@ -106896,7 +106896,7 @@ video {
 
   .lg\:text-3xl {
     font-size: 1.875rem;
-    line-height: 3.4rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-4xl {
@@ -106911,7 +106911,7 @@ video {
 
   .lg\:text-6xl {
     font-size: 3.75rem;
-    line-height: 4.5rem;
+    line-height: 1.2;
   }
 
   .lg\:text-7xl {
@@ -138484,7 +138484,7 @@ video {
 
   .xl\:text-3xl {
     font-size: 1.875rem;
-    line-height: 3.4rem;
+    line-height: 2.25rem;
   }
 
   .xl\:text-4xl {
@@ -138499,7 +138499,7 @@ video {
 
   .xl\:text-6xl {
     font-size: 3.75rem;
-    line-height: 4.5rem;
+    line-height: 1;
   }
 
   .xl\:text-7xl {
@@ -170072,7 +170072,7 @@ video {
 
   .\32xl\:text-3xl {
     font-size: 1.875rem;
-    line-height: 3.4rem;
+    line-height: 2.25rem;
   }
 
   .\32xl\:text-4xl {
@@ -170087,7 +170087,7 @@ video {
 
   .\32xl\:text-6xl {
     font-size: 3.75rem;
-    line-height: 4.5rem;
+    line-height: 1;
   }
 
   .\32xl\:text-7xl {
