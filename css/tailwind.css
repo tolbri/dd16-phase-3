@@ -10879,7 +10879,7 @@ video {
 }
 
 .rounded-3xl {
-  border-radius: 1.5rem;
+  border-radius: 4rem;
 }
 
 .rounded-full {
@@ -75318,7 +75318,7 @@ video {
 
   .md\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .md\:text-6xl {
@@ -106911,7 +106911,7 @@ video {
 
   .lg\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .lg\:text-7xl {
