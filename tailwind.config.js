@@ -9,28 +9,32 @@ module.exports = {
       fontFamily: {
         'sans': ['Sporting Grotesque']
       },
+      fontSize: {
+        "3xl": ['1.875rem', '3.4rem'],
+        "6xl": ['3.75rem', '4.5rem'],
+      },
       colors: {
-        'dreamyellow':  '#DAFC53',
-        'dreamgreen':   '#2BFDAF',
-        'dreamred':     '#FD3C3E',
-        'dreamblue':    '#5EECFD',
-        'dreampink':    '#F980E6',
-        'dreamdarkblue':'#077AF2',
+        'dreamyellow': '#DAFC53',
+        'dreamgreen': '#2BFDAF',
+        'dreamred': '#FD3C3E',
+        'dreamblue': '#5EECFD',
+        'dreampink': '#F980E6',
+        'dreamdarkblue': '#077AF2',
       },
       zIndex: {
         '-10': '-10',
-        }
-  },
-  variants: {
-    extend: {
-      bottom: ['hover'],
-      inset: ['hover']
-    }
-  },
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-    require('tailwindcss-text-fill-stroke')(),
-  ],
-}
+      }
+    },
+    variants: {
+      extend: {
+        bottom: ['hover'],
+        inset: ['hover']
+      }
+    },
+    plugins: [
+      require('tailwindcss'),
+      require('autoprefixer'),
+      require('tailwindcss-text-fill-stroke')(),
+    ],
+  }
 }
