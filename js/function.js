@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
+let debug = false;
 
 let container = document.getElementById("horizontal-scroll");
 
@@ -6,7 +7,7 @@ gsap.to(container, {
   x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
 
   scrollTrigger: {
-    markers: true, // Easaly remove markers for production
+    markers: debug, // Easaly remove markers for production
     start: "center center",
     trigger: container,
     invalidateOnRefresh: true,
@@ -20,7 +21,7 @@ gsap.to(container, {
 let yellowStar = document.getElementById("yellowZoom");
 const yellowTimeline = gsap.timeline({
   scrollTrigger: {
-    markers: true,
+    markers: debug,
     trigger: yellowStar, // What element triggers the scroll
     scrub: true, // Add a small delay of scrolling and animation. `true` is direct
     start: "center center", // Start at top of Trigger and at the top of the viewport
@@ -37,7 +38,7 @@ yellowTimeline
 let blueStar = document.getElementById("blueZoom");
 const blueTimeline = gsap.timeline({
   scrollTrigger: {
-    markers: true,
+    markers: debug,
     trigger: blueStar, // What element triggers the scroll
     scrub: true, // Add a small delay of scrolling and animation. `true` is direct
     start: "center center", // Start at top of Trigger and at the top of the viewport
@@ -56,7 +57,7 @@ blueTimeline
 let greenStar = document.getElementById("greenZoom");
 const greenTimeline = gsap.timeline({
   scrollTrigger: {
-    markers: true,
+    markers: debug,
     trigger: greenStar, // What element triggers the scroll
     scrub: true, // Add a small delay of scrolling and animation. `true` is direct
     start: "center center", // Start at top of Trigger and at the top of the viewport
@@ -74,17 +75,54 @@ const ending = document.getElementById("end");
 gsap.utils.toArray(".panel").forEach((panel, i) => {
   const pinTimeline = gsap.timeline({
     scrollTrigger: {
-      markers: true,
+      markers: debug,
       trigger: panel, // What element triggers the scroll
       scrub: true, // Add a small delay of scrolling and animation. `true` is direct
       start: "center center", // Start at top of Trigger and at the top of the viewport
       pin: true, // Pin the element true or false
       pinSpacing: false,
       endTrigger: ending,
-      end: "top center"
+      end: "top bottom"
     }
   });
 });
+
+
+
+
+gsap.utils.toArray(".colorChange").forEach(function(elem) {
+
+  let defaultBgColor = elem.getAttribute('data-default-bg-color');
+  let defaultTextColor = elem.getAttribute('data-default-text-color');
+  let bgColor = elem.getAttribute('data-bg-color');
+  let textColor = elem.getAttribute('data-text-color');
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: 'top top',
+    end: 'bottom -100',
+    onEnter: () => gsap.to(elem, {
+      backgroundColor: bgColor,
+      color: textColor
+    }),
+    onLeave: () => gsap.to(elem, {
+      backgroundColor: defaultBgColor,
+      color: defaultTextColor
+    }),
+    onLeaveBack: () => gsap.to(elem, {
+      backgroundColor: defaultBgColor,
+      color: defaultTextColor
+    }),
+    onEnterBack: () => gsap.to(elem, {
+      backgroundColor: bgColor,
+      color: textColor
+    }),
+    markers: debug
+  });
+
+});
+
+
 
 
 const modal = document.querySelector('.modal');
