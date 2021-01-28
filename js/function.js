@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(ScrollTrigger)
 let debug = true;
 
@@ -133,6 +134,40 @@ gsap.utils.toArray(".colorChange").forEach(function(elem) {
 
 });
 
+var block_flag2 = false;
+
+
+$.fn.followTo = function (pos) {
+    var $this = this;
+
+    $this.scroll(function (e) {
+      /*  console.log("SCROLLHEIGHT: "+$("#intro2").prop('scrollHeight'));
+        console.log("SCROLLTOP: "+$("#intro2").scrollTop());
+        console.log("SCROLLHEIGHT-SCROLLTOP= " + ($("#intro2").prop('scrollHeight') - $("#intro2").scrollTop()));
+        console.log("HEIGHT: "+Math.round($("#intro2").innerHeight())); */
+        if ($("#intro2").prop('scrollHeight') - $("#intro2").scrollTop() == Math.round($("#intro2").innerHeight()) ) {
+          block_flag2=true;
+          $('#intro2').css("overflow-y", "hidden");
+            $('#intro2').css("position", "absolute");
+            $("body").css("overflow-y", "scroll");
+            block_flag.destroy();
+          }
+    });
+};
+
+
+$('#intro2').followTo(0);
+
+var intro_waypoints = $('.intro_waypoint').waypoint({
+  handler: function(direction) {
+        if (block_flag2==false) {
+          console.log("intro");
+          $("body").css("overflow", "hidden");
+          $('#intro2').css("overflow-y", "scroll");
+        }
+
+  }
+})
 
 
 
@@ -254,7 +289,7 @@ var x = new RandomObjectMover(document.getElementById('a'), window);
 
 
 
-x.start(); 
+x.start();
 $(document).ready(function(){
     animateDiv('.a');
     animateDiv('.b');

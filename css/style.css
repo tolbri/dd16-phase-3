@@ -1,3 +1,29 @@
+#ellisse_ferma{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#container_2{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#intro2{
+  width: 100%;
+  height: 100vh;
+  padding-top: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
+  color: white;
+}
+
 .a-container {
   -webkit-animation: a 13s linear infinite alternate;
           animation: a 13s linear infinite alternate;
@@ -50,47 +76,47 @@
 
 @-webkit-keyframes a {
   100% {
-    transform: translateX(calc(100vw - 10%));
+    transform: translateX(calc(100vw - 17.5%));
   }
 }
 
 @keyframes a {
   100% {
-    transform: translateX(calc(100vw - 10%));
+    transform: translateX(calc(100vw - 17.5%));
   }
 }
 @-webkit-keyframes a2 {
   100% {
-    transform: translateY(calc(100vh - 10%));
+    transform: translateY(calc(100vh - 17.5%));
   }
 }
 @keyframes a2 {
   100% {
-    transform: translateY(calc(100vh - 10%));
+    transform: translateY(calc(100vh - 17.5%));
   }
 }
 
 @-webkit-keyframes b {
   0% {
-  transform: translateX(calc(100vw + 10%));  }
+  transform: translateX(50vw);  }
   }
   100% {
-  transform: translateX(calc(100vw - 10%));  }
+  transform: translateX(calc(100vw - 11.5%));  }
 }
 
 @keyframes b {
   100% {
-    transform: translateX(calc(100vw - 10%));
+    transform: translateX(calc(100vw - 11.5%));
   }
 }
 @-webkit-keyframes b2 {
   100% {
-    transform: translateY(calc(100vh - 10%));
+    transform: translateY(calc(100vh - 11.5%));
   }
 }
 @keyframes b2 {
   100% {
-    transform: translateY(calc(100vh - 10%));
+    transform: translateY(calc(100vh - 11.5%));
   }
 }
 
@@ -172,41 +198,9 @@
   }
 }
 
-div.a {
-width: 35%;
-height:auto;
-
-position:fixed;
-
-}
-
-div.b {
-width: 33%;
-height:auto;
-
-position:fixed;
-
-}
-div.c {
-width: 32%;
-height:auto;
-
-position:fixed;
-
-}
-div.d {
-width: 35%;
-height:auto;
-
-position:fixed;
-
-}
-div.e {
-width: 35%;
-height:auto;
-
-position:fixed;
-
+.item{
+  position:absolute;
+  padding:0;
 }
 
 /* Look at https://tailwindcss.com/ to style the website*/
