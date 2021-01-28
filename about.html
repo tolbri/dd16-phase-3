@@ -29,9 +29,21 @@
   </div>
 
   <div class="overflow-x-hidden">
-    <div class="flex flex-wrap flex-col h-screen ">
-      <div class="text-center flex justify-center h-full w-screen">
-        <h1 class="lg:text-8xl md:text-4xl text-6xl uppercase flex my-auto">F.A.C.T.</h1>
+    <div class="flex flex-row flex-wrap lg:h-screen w-screen">
+      <div class="flex mx-auto lg:w-1/5 w-2/3">
+        <img src="./assets/svg/cecilia.svg" />
+      </div>
+        <div class="flex mx-auto lg:w-1/5 w-2/3">
+        <img src="./assets/svg/cecilia.svg" />
+      </div>
+        <div class="flex mx-auto lg:w-1/5 w-2/3">
+        <img src="./assets/svg/cecilia.svg" />
+      </div>
+        <div class="flex mx-auto lg:w-1/5 w-2/3">
+        <img src="./assets/svg/cecilia.svg" />
+      </div>
+        <div class="flex mx-auto lg:w-1/5 w-2/3">
+        <img src="./assets/svg/cecilia.svg" />
       </div>
     </div>
   </div>
@@ -41,7 +53,7 @@
     <!-------------------------->
     <!-- F.A.C.T. STARTS HERE -->
     <!-------------------------->
-    <div class="relative flex h-screen w-full lg:px-20 p-4 text-center">
+    <div id="pinkZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
       <div class="absolute inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
         <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
       </div>
@@ -49,7 +61,7 @@
         F.A.C.T. is a video based website aimed to make you aware of the large presence of conspiracy theory videos on TikTok.
       </h2>
       <div class="absolute inset-x-0 inset-y-0  lg:p-20 w-screen">
-        <img src="assets/svg/blacksec1-pinkrectangle.svg" alt="star" class="h-full w-full m-auto"/>
+        <img id="pinkZoomImg" src="assets/svg/blacksec1-pinkrectangle.svg" alt="star" class="h-full w-full m-auto"/>
       </div>
     </div>
     <div class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreampink">
@@ -73,7 +85,7 @@
     <!-------------------------->
     <!-- RESEARCH STARTS HERE -->
     <!-------------------------->
-    <div class="relative flex h-screen w-full lg:px-20 p-4 text-center">
+    <div id="redZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
       <div class="absolute inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
         <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
       </div>
@@ -81,41 +93,41 @@
         starting from a research that analyzed the visual language that conspiracy theories adopt in social media communication
       </h2>
       <div class="absolute inset-x-0 inset-y-0  lg:p-20 w-screen">
-        <img src="assets/svg/greysec3-pinkellipse.svg" alt="star" class="h-full w-full m-auto"/>
+        <img id="redZoomImg" src="assets/svg/greysec3-pinkellipse.svg" alt="star" class="h-full w-full m-auto"/>
       </div>
     </div>
 
     <div class="bg-dreamred">
-      <div class="relative flex h-screen w-full lg:p-20 p-4 text-left panel" data-ending="end">
+      <div class="relative flex h-screen w-full lg:p-20 p-4 text-left panel" data-ending="end-research">
         <p class="lg:text-3xl md:text-5xl text-lg z-10 lg: ">
           <a href="#" class="underline hover:text-white">@conspiracy sent you a pic</a>
           aims to discover what makes the aesthetic of conspiracy theories so powerful and catchy.
         </p>
       </div>
-      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end">
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-research">
         <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
           <img src="./assets/svg/protocol_1.png" class="w-full transform rotate-12"/>
         </div>
       </div>
-      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end">
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-research">
         <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
           <img src="./assets/svg/protocol_1.png" class="w-full transform rotate-12"/>
         </div>
       </div>
-      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end">
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-research">
         <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
           <img src="./assets/svg/protocol_1.png" class="w-full transform rotate-12"/>
         </div>
       </div>
-      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end">
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-research">
         <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
           <img src="./assets/svg/protocol_1.png" class="w-full transform rotate-12"/>
         </div>
       </div>
-      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end"></div>
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-research"></div>
     </div>
 
-    <div id="end" class="relative flex h-screen w-full lg:p-20 px-4 text-left bg-dreamred">
+    <div id="end-research" class="relative flex h-screen w-full lg:p-20 px-4 text-left bg-dreamred">
       <p class="lg:text-3xl md:text-5xl text-lg z-10">
         By analyzing different platforms we’ve noticed that generally each conspiracy theory has a visual language of its own that is more or less commonly used among all the platforms. However, atypically on TikTok, the visual
         <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">language of the
@@ -130,7 +142,7 @@
       </p>
     </div>
     <div class="relative flex-col w-full lg:p-20 pb-64">
-      <div class="grid grid-cols-7">
+      <div class="grid lg:grid-cols-7 grid-cols-3">
         <div class="">
           <img src="./assets/svg/dance.png"/>
         </div>
@@ -147,7 +159,7 @@
           <img src="./assets/svg/dance.png"/>
         </div>
       </div>
-      <div class="grid grid-cols-7">
+    <div class="grid lg:grid-cols-7 grid-cols-3">
         <div class=""></div>
         <div class="">
           <img src="./assets/svg/dance.png"/>
@@ -172,7 +184,7 @@
       </div>
     </div>
     <div class="relative flex flex-col h-screen w-full lg:p-20 p-4 text-left bg-dreamred">
-      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10 py-4">
         So the data collected during the second phase was enriched by additional research and repurposed to explain the problematic of conspiracy theory videos on TikTok. We have selected the
         <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">three biggest conspiracy</span>
         theories of 2020.
@@ -201,12 +213,12 @@
     </div>
 
     <div class="py-20 bg-dreamred">
-      <aside id="container-wrapper" class="overflow-x-hidden">
+      <div id="container-wrapper" class="overflow-x-hidden">
         <div id="horizontal-scroll" class="flex flex-wrap flex-col">
           <div class="text-center flex justify-left lg:ml-20 pt-20 pl-4">
             <div class="relative">
               <p class="absolute -top-10 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">coronavirus related</p>
-            <img src="./assets/svg/dance.png"/>
+              <img src="./assets/svg/dance.png"/>
             </div>
             <img src="./assets/svg/dance.png" class="mr-3"/>
             <img src="./assets/svg/dance.png" class="mr-3"/>
@@ -219,7 +231,7 @@
             <img src="./assets/svg/dance.png" class="mr-3"/>
             <div class="relative">
               <p class="absolute -top-10 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">QAnon</p>
-            <img src="./assets/svg/dance.png" />
+              <img src="./assets/svg/dance.png"/>
             </div>
             <img src="./assets/svg/dance.png" class="mr-3"/>
             <img src="./assets/svg/dance.png" class="mr-3"/>
@@ -232,7 +244,7 @@
             <img src="./assets/svg/dance.png" class="mr-3"/>
             <div class="relative">
               <p class="absolute -top-10 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">Rigged Presidential Election</p>
-            <img src="./assets/svg/dance.png" />
+              <img src="./assets/svg/dance.png"/>
             </div>
             <img src="./assets/svg/dance.png" class="mr-3"/>
             <img src="./assets/svg/dance.png" class="mr-3"/>
@@ -246,8 +258,278 @@
           </div>
 
         </div>
-      </aside>
+      </div>
     </div>
+
+    <div class="relative flex flex-col h-screen w-full lg:p-20 p-4 text-left bg-dreamred">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10 py-4">
+        For each hashtag we search for the possible social
+        <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">consequences</span>
+        of the spread of conspiracy theories expecially on Tik Tok to underline their
+        <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">dangerous</span>
+        and problematic outcomes in reality.
+      </p>
+      <div class="flex flex-row h-auto">
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-pinkellipse.svg" class=""/>
+        </div>
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-pinkellipse.svg" class=""/>
+        </div>
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-pinkellipse.svg" class=""/>
+        </div>
+      </div>
+    </div>
+<div class="py-10 bg-dreamred"></div>
+    <div class="py-20 bg-dreamred">
+      <div id="container-wrapper-2" class="overflow-x-hidden">
+        <div id="horizontal-scroll-2" class="flex flex-wrap flex-col">
+          <div class="text-center flex justify-left lg:ml-20 pt-20 pl-4 w-auto">
+
+<img src="./assets/articles_consequences/1.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/2.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/3.png" class="my-auto lg:h-1/2 h-full  w-auto mr-3"/>
+<img src="./assets/articles_consequences/4.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/5.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/6.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/7.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/8.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/9.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/10.png" class="my-auto lg:h-1/2 h-full w-auto mr-3"/>
+<img src="./assets/articles_consequences/11.png" class="my-auto lg:h-1/2 h-full w-auto mr-40"/>
+<div class="px-24"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-------------------------->
+    <!-- CONCEPT STARTS HERE -->
+    <!-------------------------->
+    <div id="purpleZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
+      <div class="absolute inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
+        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+      </div>
+      <h2 class="my-auto lg:text-6xl md:text-5xl text-3xl uppercase z-10">
+        found out the undercover presence of conspiracy theory videos on TikTok, f.a.c.t. intends to warn the zoomers who are the main tik tok users
+      </h2>
+      <div class="absolute inset-x-0 inset-y-0  lg:p-20 w-screen">
+        <img id="purpleZoomImg" src="assets/svg/greysec3-pinkellipse.svg" alt="star" class="h-full w-full m-auto"/>
+      </div>
+    </div>
+
+    <div class="relative flex h-screen w-full lg:p-20 px-4 text-left bg-dreampurple">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+        Conspiracy theories have inherently a strong attractiveness and TikTok is one of the most engaging social media platforms of all. Matching the two of them could easily drag a young user into a conspiracy video loop that could have unfortunate
+        consequences.
+      </p>
+    </div>
+
+    <div class="bg-dreampurple">
+      <div class="relative flex h-screen w-full lg:p-20 p-4 text-left panel" data-ending="end-concept">
+        <p class="lg:text-3xl md:text-5xl text-lg z-10 lg: ">
+          It is assumed that an adult has a well-established critical sense and the awareness needed to watch conspiracy theory videos without falling into the conspiracy theories’ rabbit hole. However TikTok is mostly used by Gen Z. TikTok is a platform where
+          anyone, overall young activists, can spread their ideas freely. In this way the natural and strong enthusiasm of a teenager can easily become an obsession for conspiracy theories.
+        </p>
+      </div>
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-concept">
+        <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
+          <h2 class="my-auto mx-auto lg:w-4/5 lg:text-4xl md:text-xl sm:text-base lg:p-10 p-4  text-white bg-dreampurple border-2 border-white transform -rotate-6">
+            “TikTok is full of crazy ideas—conspiracies are no different. They've been normalized by the platform where many young people spend most of their time.” Sofia Barnett
+          </h2>
+        </div>
+      </div>
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-concept">
+        <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
+          <h2 class="my-auto mx-auto lg:w-4/5 lg:text-4xl md:text-xl sm:text-base lg:p-10 p-4  text-white bg-dreampurple border-2 border-white transform rotate-12">
+            “Many of these conspiracy sites and stories are entertaining. They are social gathering spots. They are exciting.” Nancy Rosenblum
+          </h2>
+        </div>
+      </div>
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-concept">
+        <div class="my-auto mx-auto p-10 lg:w-2/3 w-full">
+          <div class="my-auto mx-auto lg:w-4/5 lg:text-4xl md:text-xl sm:text-base lg:p-10 p-4  text-white bg-dreampurple border-2 border-white transform rotate-3">
+            <h2>41% of TikTok users are between 16 and 24 years old
+            </h2>
+            <img src="./assets/svg/barchart.svg" />
+          </div>
+        </div>
+      </div>
+      <div class=" flex w-full h-screen lg:p-20 px-4 text-center panel" data-ending="end-concept"></div>
+    </div>
+
+    <div id="end-concept" class="relative flex h-screen w-full lg:p-20 px-4 text-left bg-dreampurple">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+        F.A.C.T. is warning you to be careful of conspiracy videos on TikTok: they’re difficult to recognize and even if they’re funny and engaging they shouldn’t be underestimated. Falling into a conspiracy video loop could have unfortunate consequences.
+      </p>
+    </div>
+    <!-------------------------->
+    <!--- OUTPUT STARTS HERE --->
+    <!-------------------------->
+    <div id="blueZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
+      <div class="absolute inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
+        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+      </div>
+      <h2 class="my-auto lg:text-6xl md:text-5xl text-3xl uppercase z-10">
+      But how could we draw GEN Z attention when they’re surrounded by many other catchy contents?
+      </h2>
+      <div class="absolute inset-x-0 inset-y-0  lg:p-20 w-screen">
+        <img id="blueZoomImg" src="assets/svg/greysec3-pinkellipse.svg" alt="star" class="h-full w-full m-auto"/>
+      </div>
+    </div>
+    <div class="py-20 bg-dreamdarkblue">
+    </div>
+
+    <div class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreamdarkblue panel" data-ending="end-giulia">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+        In order to show the presence of conspiracy theory videos on TikTok it was decided to use the language and material offered by the platform.
+By doing this the decision of the tone of voice
+to use was pretty easy: use a young and fresh language that resembles the way in which TikTok’s users speak.
+      </p>
+    </div>
+    <div class="relative flex-col w-full lg:p-20 pb-64">
+      <div class="grid lg:grid-cols-7 grid-cols-3">
+        <div class="">
+        </div>
+        <div class=""></div>
+        <div class="">
+          <img src="./assets/svg/dance.png"/>
+        </div>
+        <div class=""></div>
+        <div class="">
+
+        </div>
+        <div class=""></div>
+        <div class="">
+          <img src="./assets/svg/dance.png"/>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-7 grid-cols-3">
+        <div class=""></div>
+        <div class="">
+        </div>
+        <div class=""></div>
+        <div class="">
+        </div>
+        <div class=""><img src="./assets/svg/dance.png"/></div>
+        <div class="">
+        </div>
+        <div class=""></div>
+      </div>
+    </div>
+
+    <div id="end-giulia" class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreamdarkblue panel" data-ending="end-giulia">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+The result is that on TikTok conspiracy theories’ contents appear very similar to any other kind of content      </p>
+    </div>
+    <div class="py-20 bg-dreamdarkblue">
+    </div>
+    <div class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreamdarkblue panel" data-ending="end-shapes">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+        Following that also the visual language needed to be coherent, that lead to the decision of a bright color palette matched with a rounded font like the “Sporting” from Velvetine Foundry. The use of a set of shapes that recreate stickers (a visual asset also used on the platform) is used throughout the website and videos to give movement and present useful information in a catchy way.
+      </p>
+    </div>
+
+    <div class="relative h-screen w-full z-10 overflow-hidden">
+    <div class="a-container">
+        <img class="item" src="assets/img/floating-triangle.svg"></img>
+    </div>
+    <div class="b-container">
+        <img class="item b" src="assets/img/floating-square.png"></img>
+    </div>
+    <div class="c-container">
+        <img class="item c" src="assets/img/floating-circle.png"></img>
+    </div>
+    <div class="d-container">
+        <img class="item d" src="assets/img/floating-ellipse.png"></img>
+    </div>
+    <div class="e-container">
+        <img class="item e" src="assets/img/floating-star1.png"></img>
+    </div>
+    </div>
+
+    <div id="end-shapes" class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreamdarkblue">
+      <p class="lg:text-3xl md:text-5xl text-lg z-10">
+        The wide amount of videos offered by the platform made it easy to choose them as the main content of the explanatory videos, also to maintain the idea of explaining the platform through the platform.
+      </p>
+    </div>
+    <!-------------------------->
+    <!--- OUTPUT STARTS HERE --->
+    <!-------------------------->
+    <div class="relative flex lg:h-screen w-full lg:px-20 p-4 pt-24 text-center">
+      <div class="absolute inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
+        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+      </div>
+
+      <div class="flex flex-row flex-wrap ">
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto transform lg:translate-x-20"/>
+      </div>
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto transform lg:translate-y-20 lg:translate-x-40"/>
+      </div>
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto transform lg:translate-x-40"/>
+      </div>
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto transform lg:translate-y-60"/>
+      </div>
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto transform lg:-translate-y-20"/>
+      </div>
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto"/>
+      </div>
+      <div class="lg:w-1/4  h-64 mx-auto">
+        <img src="assets/svg/cecilia.svg" alt="star" class="h-full w-full m-auto transform lg:-translate-x-40"/>
+      </div>
+    </div>
+    </div>
+    <!-------------------------->
+    <!--- FOOTER STARTS HERE --->
+    <!-------------------------->
+    <div class="flex flex-row flex-wrap lg:h-64 bg-black text-gray-200 text-sm lg:text-left text-center">
+      <div class="lg:w-2/5 p-5 w-full">
+        <img src="assets/svg/cecilia.svg" alt="star" class="w-24 mx-auto" />
+        <img src="assets/svg/cecilia.svg" alt="star" class="w-24 mx-auto" />
+      </div>
+      <div class="flex lg:w-1/5 w-full p-5">
+        <div class="my-auto mx-auto">
+        <h6>Project by</h6>
+        <ul>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+        </ul>
+      </div>
+      </div>
+      <div class="flex lg:w-1/5 w-full p-5">
+        <div class="my-auto mx-auto">
+        <h6>Faculty</h6>
+        <ul>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+        </ul>
+      </div>
+      </div>
+      <div class="flex lg:w-1/5 w-full p-5">
+        <div class="my-auto mx-auto">
+        <h6>Teaching Assistants</h6>
+        <ul>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+        </ul>
+      </div>
+      </div>
+      </div>
+
   </div>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
