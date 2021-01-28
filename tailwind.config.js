@@ -1,40 +1,43 @@
   module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    cursor: {
-      crosshair: 'crosshair',
-    },
-    extend: {
-      fontFamily: {
-        'sans': ['Sporting Grotesque']
+    purge: [],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+      cursor: {
+        crosshair: 'crosshair',
       },
-      fontSize: {
-        "3xl": ['1.875rem', '3.4rem'],
-        "6xl": ['3.75rem', '4.5rem'],
-      },
-      colors: {
-        'dreamyellow': '#DAFC53',
-        'dreamgreen': '#2BFDAF',
-        'dreamred': '#FD3C3E',
-        'dreamblue': '#5EECFD',
-        'dreampink': '#F980E6',
-        'dreamdarkblue': '#077AF2',
-      },
-      zIndex: {
-        '-10': '-10',
-      }
-    },
-    variants: {
       extend: {
-        bottom: ['hover'],
-        inset: ['hover']
-      }
-    },
-    plugins: [
-      require('tailwindcss'),
-      require('autoprefixer'),
-      require('tailwindcss-text-fill-stroke')(),
-    ],
+        borderRadius: {
+          'vera': '100px'
+        },
+        fontFamily: {
+          'sans': ['Sporting Grotesque']
+        },
+        fontSize: {
+          "3xl": ['1.875rem', '3.4rem'], // first value is the size, second one the line height
+          "6xl": ['3.75rem', '4.5rem'],
+        },
+        colors: {
+          'dreamyellow': '#DAFC53',
+          'dreamgreen': '#2BFDAF',
+          'dreamred': '#FD3C3E',
+          'dreamblue': '#5EECFD',
+          'dreampink': '#F980E6',
+          'dreamdarkblue': '#077AF2',
+        },
+        zIndex: {
+          '-10': '-10',
+        }
+      },
+      variants: {
+        extend: {
+          bottom: ['hover'],
+          inset: ['hover']
+        }
+      },
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+        require('tailwindcss-text-fill-stroke')(),
+      ],
+    }
   }
-}
