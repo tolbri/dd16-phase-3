@@ -7,7 +7,7 @@
       },
       extend: {
         borderRadius: {
-          'vera': '100px'
+          'vera': '50%'
         },
         fontFamily: {
           'sans': ['Sporting Grotesque']
