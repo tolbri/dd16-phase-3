@@ -254,7 +254,7 @@ var x = new RandomObjectMover(document.getElementById('a'), window);
 
 
 
-x.start(); */
+x.start(); 
 $(document).ready(function(){
     animateDiv('.a');
     animateDiv('.b');
@@ -278,11 +278,24 @@ function makeNewPosition(){
 
 function animateDiv(myclass){
     var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 3000,   function(){
+    $(myclass).animate({ top: newq[0], left: newq[1] },3000,  function(){
       animateDiv(myclass);
     });
 
 };
+
+function collision($a, $b) {
+    var x1 = $a.offset().left;
+    var y1 = $a.offset().top;
+    var x2 = $b.offset().left;
+    var y2 = $b.offset().top;
+    if ((y1 + $a.outerHeight(true)) < y2 ||
+        y1 > (y2 + $b.outerHeight(true)) ||
+        (x1 + $a.outerWidth(true)) < x2  ||
+        x1 > (x2 + $b.outerWidth(true)))
+        return false;
+    return true;
+}
 
 
 

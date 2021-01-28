@@ -1,3 +1,176 @@
+.a-container {
+  -webkit-animation: a 13s linear infinite alternate;
+          animation: a 13s linear infinite alternate;
+}
+
+.a {
+  -webkit-animation: a2 7s linear infinite alternate;
+          animation: a2 7s linear infinite alternate;
+}
+
+.b-container {
+  -webkit-animation: b 15s linear infinite alternate;
+          animation: b 15s linear infinite alternate;
+}
+
+.b {
+  -webkit-animation: b2 8s linear infinite alternate;
+          animation: b2 8s linear infinite alternate;
+}
+
+.c-container {
+  -webkit-animation: c 18s linear infinite alternate;
+          animation: c 18s linear infinite alternate;
+}
+
+.c {
+  -webkit-animation: c2 9s linear infinite alternate;
+          animation: c2 9s linear infinite alternate;
+}
+
+.d-container {
+  -webkit-animation: d 13s linear infinite alternate;
+          animation: d 13s linear infinite alternate;
+}
+
+.d {
+  -webkit-animation: d2 6s linear infinite alternate;
+          animation: d2 6s linear infinite alternate;
+}
+
+.e-container {
+  -webkit-animation: e 15s linear infinite alternate;
+          animation: e 15s linear infinite alternate;
+}
+
+.e {
+  -webkit-animation: e2 8s linear infinite alternate;
+          animation: e2 8s linear infinite alternate;
+}
+
+@-webkit-keyframes a {
+  100% {
+    transform: translateX(calc(100vw - 10%));
+  }
+}
+
+@keyframes a {
+  100% {
+    transform: translateX(calc(100vw - 10%));
+  }
+}
+@-webkit-keyframes a2 {
+  100% {
+    transform: translateY(calc(100vh - 10%));
+  }
+}
+@keyframes a2 {
+  100% {
+    transform: translateY(calc(100vh - 10%));
+  }
+}
+
+@-webkit-keyframes b {
+  0% {
+  transform: translateX(calc(100vw + 10%));  }
+  }
+  100% {
+  transform: translateX(calc(100vw - 10%));  }
+}
+
+@keyframes b {
+  100% {
+    transform: translateX(calc(100vw - 10%));
+  }
+}
+@-webkit-keyframes b2 {
+  100% {
+    transform: translateY(calc(100vh - 10%));
+  }
+}
+@keyframes b2 {
+  100% {
+    transform: translateY(calc(100vh - 10%));
+  }
+}
+
+@-webkit-keyframes c {
+  0% {
+  transform: translateX(calc(100vw - 30%));  }
+  }
+  100% {
+  transform: translateX(calc(100vw + 10%));  }
+}
+
+@keyframes c {
+  100% {
+    transform: translateX(calc(100vw - 10%));
+  }
+}
+@-webkit-keyframes c2 {
+  100% {
+    transform: translateY(calc(100vh - 10%));
+  }
+}
+@keyframes c2 {
+  100% {
+    transform: translateY(calc(100vh - 30%));
+  }
+}
+
+@-webkit-keyframes d {
+  0% {
+  transform: translateX(calc(100vw - 30%));  }
+  }
+  100% {
+  transform: translateX(calc(0vw + 10%));  }
+}
+
+@keyframes d {
+  100% {
+    transform: translateX(calc(0vw - 10%));
+  }
+}
+@-webkit-keyframes d2 {
+  0% {
+  transform: translateY(calc(100vh - 30%));  }
+  }
+  100% {
+    transform: translateY(calc(0vh - 10%));
+  }
+}
+@keyframes d2 {
+  100% {
+    transform: translateY(calc(0vh - 30%));
+  }
+}
+
+@-webkit-keyframes e {
+  0% {
+  transform: translateX(calc(100vw - 50%));  }
+  }
+  100% {
+  transform: translateX(calc(10vw + 30%));  }
+}
+
+@keyframes e {
+  100% {
+    transform: translateX(calc(0vw - 10%));
+  }
+}
+@-webkit-keyframes e2 {
+  0% {
+  transform: translateY(calc(100vh - 70%));  }
+  }
+  100% {
+    transform: translateY(calc(100vh - 10%));
+  }
+}
+@keyframes e2 {
+  100% {
+    transform: translateY(calc(0vh - 30%));
+  }
+}
 
 div.a {
 width: 12%;
