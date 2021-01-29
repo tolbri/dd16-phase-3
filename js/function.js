@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-let debug = true;
+let debug = false;
 
 let container = document.getElementById("horizontal-scroll");
 if (container) {
@@ -208,8 +208,11 @@ gsap.utils.toArray(".colorChange").forEach(function(elem) {
 
 });
 
-var block_flag2 = false;
 
+
+
+// @Vera, I think the follwing code is causing problems in the bottom section when the cards should overlap
+var block_flag2 = false;
 
 $.fn.followTo = function(pos) {
   var $this = this;
@@ -228,7 +231,6 @@ $.fn.followTo = function(pos) {
     }
   });
 };
-
 
 $('#intro2').followTo(0);
 
