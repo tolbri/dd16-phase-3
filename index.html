@@ -10,6 +10,9 @@
   <link href="./css/tailwind.css" rel="stylesheet" type="text/css">
   <link href="./css/style.css" rel="stylesheet" type="text/css">
   <!-- <link href="./css/Home.css" rel="stylesheet" type="text/css"> -->
+
+<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="bg-gray-200 overflow-x-hidden">
@@ -33,31 +36,34 @@
 
   <div id="container-wrapper" class="overflow-x-hidden">
     <div id="horizontal-scroll" class="flex flex-wrap flex-col h-screen ">
+      <div id="stage" style="overflow-x:hidden;">
+      <div class="a-container">
+        <div class="a"> <img src="assets/img/floating-triangle.svg"> </img> </div>
+      </div>
+      <div class="b-container">
+        <div class="b"> <img src="assets/img/floating-square.png"> </img> </div>
+      </div>
+      <div class="c-container">
+        <div class="c"> <img src="assets/img/floating-circle.png"> </img> </div>
+      </div>
+      <div class="d-container">
+        <div class="d"> <img src="assets/img/floating-star1.png"> </img> </div>
+      </div>
+      <div class="e-container">
+        <div class="e"> <img src="assets/img/floating-ellipse.png"> </img> </div>
+      </div>
+      <div class="f-container">
+        <div class="f"> <img src="assets/img/floating-ellipse2.png"> </img> </div>
+      </div>
+    </div>
       <div class="text-center flex justify-center h-full w-screen z-10">
         <h1 class="lg:text-8xl md:text-4xl text-6xl uppercase flex my-auto">F.A.C.T.</h1>
       </div>
       <div class="text-left flex h-screen w-full z-10">
         <h1 class="lg:text-8xl md:text-4xl text-6xl uppercase flex my-auto whitespace-nowrap pr-4 lg:pr-40">Find All Conspiracy Theories</h1>
       </div>
-    </div>
-    <div class="absolute w-screen z-0" style="top:-10%">
-      <div class="a-container">
-        <img class="item a z-0" src="assets/img/floating-triangle.svg"></img>
-      </div>
-      <div class="b-container">
-        <img class="item b z-0" src="assets/img/floating-square.png"></img>
-      </div>
-      <div class="c-container">
-        <img class="item c z-0" src="assets/img/floating-circle.png"></img>
-      </div>
-      <div class="d-container">
-        <img class="item d z-0" src="assets/img/floating-ellipse.png"></img>
-      </div>
-      <div class="e-container">
-        <img class="item e z-0" src="assets/img/floating-star1.png"></img>
-      </div>
-    </div>
-  </div>
+  </aside>
+</div>
   <div>
 
     <div class="relative flex h-screen w-full lg:p-20 p-4 text-center">
@@ -98,33 +104,29 @@
     </div>
   </div>
 
-  <div class="h-screen bg-black">
-    <div id="container_2" class="intro_waypoint">
-      <div id="ellisse_ferma" class="absolute inset-x-0 bottom-1/4 lg:-bottom-0 lg:p-20 mx-auto z-10">
-        <img src="assets/svg/blacksec1-purplestarbig.svg" alt="star" class="h-full w-full"/>
+
+      <div class="relative flex h-screen w-full lg:p-20 bg-black p-4 text-left panel" data-ending="ending-video">
+        <img src="assets/svg/blacksec1-purplestarbig.svg" alt="star" class="h-full mx-auto"/>
       </div>
-      <div id="intro2" style="height:100vh; width:100vw; z-index:10">
-        <div id="prima_slide" class="relative flex w-full h-screen lg:p-20 text-center lg:pb-64 pb-40 p-4" style="height:100vh;">
+      <div style="height:100vh; width:100vw;" class="flex text-center lg:p-20 p-4 z-10">
           <h2 class="pt-20 uppercase my-auto mx-auto lg:text-6xl md:text-5xl text-3xl text-white z-20">
             <a href="https://www.britannica.com/topic/conspiracy-theory" class="underline uppercase">Conspiracy theory:</a><br/>an attempt to explain harmful or tragic events as the result of the actions of a small powerful group
           </h2>
-        </div>
-        <div id="seconda_slide" class="relative flex h-screen w-full lg:p-20 ">
-          <video id="video_1" class="h-full mx-auto" controls="controls" preload="auto">
+      </div>
+      <div class="h-screen mx-auto p-10 flex z-10">
+          <video id="video_1" class="mx-auto flex z-10" controls="controls" preload="auto">
             <source src="./assets/video/conspiracy_definition.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>
-    </div>
-  </div>
+
 
   <!-- <div class="relative flex w-full h-screen lg:p-20 text-center bg-black lg:pb-64 pb-40 p-4"> <h2 class="uppercase my-auto mx-auto lg:text-6xl md:text-5xl text-3xl text-white z-20"> <a href="https://www.britannica.com/topic/conspiracy-theory"
   class="underline uppercase">Conspiracy theory:</a><br/>an attempt to explain harmful or tragic events as the result of the actions of a small powerful group </h2> <div class="absolute inset-x-0 bottom-1/4 lg:-bottom-0 lg:p-20 w-2/3 mx-auto z-10">
   <img src="assets/svg/blacksec1-purplestarbig.svg" alt="star" class="h-full w-full"/> </div> </div> <div class="relative flex h-screen w-full lg:p-20 bg-black"> <div class="video mx-auto z-20"> <video id="video_1" class="h-full mx-auto"
   controls="controls" preload="auto"> <source src="./assets/video/conspiracy_definition.mp4" type="video/mp4"> Your browser does not support the video tag. </video> </div> </div> -->
 
-  <div class="relative flex h-screen w-full lg:p-20 p-4 text-center bg-black">
+  <div id="ending-video" class="relative flex h-screen w-full lg:p-20 p-4 text-center bg-black">
     <div class="relative my-auto">
       <h2 class="text-left my-auto mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-white text-white rounded-3xl lg:py-24 py-8 px-12">
         Why are conspiracy theory videos not recognizable?
@@ -217,11 +219,8 @@
     </div>
   </div>
 
-  <div id="greenZoom" class="zoom-in relative flex h-screen w-full lg:p-20 p-4 text-center bg-dreamdarkblue">
-    <h2 class="my-auto mx-auto lg:text-6xl md:text-5xl text-3xl text-black z-10">
-      Bias<br/>
-      and Fears
-    </h2>
+    <div id="greenZoom" class="zoom-in relative flex h-screen w-full lg:p-20 p-4 text-center bg-dreamdarkblue">
+    <h2 class="my-auto mx-auto lg:text-6xl md:text-5xl text-3xl text-white z-10"> Bias<br/> and Fears</h2>
     <div class="absolute inset-0 lg:p-20 overflow-hidden">
       <img id="greenZoomImg" src="assets/svg/greysec3-greenellipse.svg" alt="star" class="h-full w-full"/>
     </div>
