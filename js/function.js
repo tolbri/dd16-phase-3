@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger)
 let debug = false;
 
-$('document').ready(function() {
+window.addEventListener('DOMContentLoaded', function() {
   console.log("Function Loaded!");
 
   // removes the loader when document is ready
