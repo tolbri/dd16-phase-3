@@ -5,27 +5,36 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
   <link href="./css/tailwind.css" rel="stylesheet" type="text/css">
   <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="bg-gray-200 ">
+<body class="bg-gray-200 overflow-hidden">
 
-  <div class="fixed top-0 w-screen flex flex-row justify-end p-4 z-50">
+<!-- LOADER -->
+  <div id="loader" class="flex w-screen h-screen fixed bg-white z-50 bg-white">
+  <span class="text-green-500 my-auto mx-auto" >
+    <img src="assets/svg/greysec1-greensquare.svg" alt="back to top" class="h-12 w-12 m-auto animate-spin"/>
+  </span>
+</div>
+
+  <div class="fixed top-0 w-screen flex flex-row justify-end p-4 z-40">
     <div class="border-1 border-black rounded-xl bg-black">
       <a href="./index.html">
-        <button class=" transform translate-x-1 -translate-y-1 hover:translate-y-0 hover:translate-x-0 text-center px-3 py-2 border-2 rounded-xl border-black bg-gray-200">
+        <button class=" transform translate-x-1 -translate-y-1 hover:translate-y-0 hover:translate-x-0 align-bottom text-center px-8 pt-5 pb-4 border-2 rounded-xl border-black bg-gray-200">
           F.A.C.T.
         </button>
       </a>
     </div>
   </div>
 
-  <div class="fixed bottom-0 left-0 p-4 z-50">
+  <div id="back-to-top" class="fixed bottom-0 left-0 p-4 z-50">
     <button class="lg:w-16 w-12">
       <img src="assets/svg/back-to-top.svg" alt="back to top" class="h-full w-full m-auto"/>
     </button>
-
   </div>
 
 
@@ -33,7 +42,7 @@
     <!-------------------------->
     <!-- F.A.C.T. STARTS HERE -->
     <!-------------------------->
-  <div>
+  <div id="main">
     <section id="landing" class="w-screen h-screen">
       <div id="menu" style="transform:translate(0%,-50%);position:relative; top:50%;">
       </div>
@@ -73,7 +82,7 @@
     <!-------------------------->
     <div id="redZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
       <div class="absolute z-50 inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
-        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+        <img src="assets/svg/chapter-research.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
       </div>
       <h2 class="my-auto lg:text-6xl md:text-5xl text-3xl uppercase z-10">
         starting from a research that analyzed the visual language that conspiracy theories adopt in social media communication
@@ -283,7 +292,7 @@
     <!-------------------------->
     <div id="purpleZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
       <div class="absolute z-50 inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5 ">
-        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+        <img src="assets/svg/chapter-concept.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
       </div>
       <h2 class="my-auto lg:text-6xl md:text-5xl text-3xl uppercase z-10">
         found out the undercover presence of conspiracy theory videos on TikTok, f.a.c.t. intends to warn the zoomers who are the main tik tok users
@@ -342,7 +351,7 @@
     <!-------------------------->
     <div id="blueZoom" class="relative flex h-screen w-full lg:px-20 p-4 text-center overflow-hidden">
       <div class="absolute z-50 inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5">
-        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+        <img src="assets/svg/chapter-output.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
       </div>
       <h2 class="my-auto lg:text-6xl md:text-5xl text-3xl uppercase z-10">
       But how could we draw GEN Z attention when they’re surrounded by many other catchy contents?
@@ -433,7 +442,7 @@ The result is that on TikTok conspiracy theories’ contents appear very similar
     <!-------------------------->
     <div id="teamZoom" class="relative flex lg:h-screen w-full lg:px-20 p-4 pt-24 text-center">
       <div  class="absolute z-50 inset-x-0 top-0 mx-auto w-4/5 lg:w-1/5 ">
-        <img src="assets/svg/chapter-fact.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
+        <img src="assets/svg/chapter-team.svg" alt="F.A.C.T." class="h-full w-full m-auto"/>
       </div>
       <div class="flex flex-row flex-wrap">
         <div class="lg:w-1/4  h-64 mx-auto">
