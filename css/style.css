@@ -1,4 +1,9 @@
-#ellisse_ferma{
+.list-outside{
+list-style-image: url("../assets/img/list_point.svg");
+list-style-position: inside
+  }
+
+  #ellisse_ferma{
   width: 100%;
   height:100%;
   position: absolute;
