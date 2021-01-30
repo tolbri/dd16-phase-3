@@ -9,9 +9,16 @@
   <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="bg-gray-200 ">
+<body class="bg-gray-200 overflow-hidden">
 
-  <div class="fixed top-0 w-screen flex flex-row justify-end p-4 z-50">
+<!-- LOADER -->
+  <div id="loader" class="flex w-screen h-screen fixed bg-white z-50 bg-white">
+  <span class="text-green-500 my-auto mx-auto" >
+    <img src="assets/svg/greysec1-greensquare.svg" alt="back to top" class="h-12 w-12 m-auto animate-spin"/>
+  </span>
+</div>
+
+  <div class="fixed top-0 w-screen flex flex-row justify-end p-4 z-40">
     <div class="border-1 border-black rounded-xl bg-black">
       <a href="./index.html">
         <button class=" transform translate-x-1 -translate-y-1 hover:translate-y-0 hover:translate-x-0 text-center px-3 py-2 border-2 rounded-xl border-black bg-gray-200">
@@ -21,7 +28,7 @@
     </div>
   </div>
 
-  <div class="fixed bottom-0 left-0 p-4 z-50">
+  <div class="fixed bottom-0 left-0 p-4 z-40">
     <button class="lg:w-16 w-12">
       <img src="assets/svg/back-to-top.svg" alt="back to top" class="h-full w-full m-auto"/>
     </button>

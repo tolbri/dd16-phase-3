@@ -4,6 +4,11 @@ let debug = false;
 $('document').ready(function() {
   console.log("Function Loaded!");
 
+  // removes the loader when document is ready
+  let loader = $("#loader")
+  loader.addClass("hidden");
+  $("body").removeClass("overflow-hidden");
+
   let container = document.getElementById("horizontal-scroll");
   if (container) {
     gsap.to(container, {
