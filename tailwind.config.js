@@ -22,7 +22,7 @@
           'dreamred': '#FD3C3E',
           'dreamblue': '#5EECFD',
           'dreampink': '#F980E6',
-          'dreamdarkblue': '#1D91FF',
+          'dreamdarkblue': '#077AF2',
           'dreampurple': '#A582FB',
         },
         zIndex: {
