@@ -17,6 +17,30 @@ window.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   });
 
+  let goTopTrigger = document.getElementById("show-back-to-top");
+  gsap.utils.toArray("#back-to-top").forEach(function(elem) {
+
+    ScrollTrigger.create({
+      trigger: goTopTrigger,
+      start: 'top top',
+      end: '9999',
+      onEnter: () => gsap.to(elem, {
+        opacity: 1
+      }),
+      onLeave: () => gsap.to(elem, {
+        opacity: 0
+      }),
+      onLeaveBack: () => gsap.to(elem, {
+        opacity: 0
+      }),
+      onEnterBack: () => gsap.to(elem, {
+        opacity: 1
+      }),
+      markers: debug
+    });
+
+  });
+
   let container = document.getElementById("horizontal-scroll");
   if (container) {
     gsap.to(container, {
