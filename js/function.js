@@ -192,37 +192,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-  gsap.utils.toArray(".colorChange").forEach(function(elem) {
 
-    let defaultBgColor = elem.getAttribute('data-default-bg-color');
-    let defaultTextColor = elem.getAttribute('data-default-text-color');
-    let bgColor = elem.getAttribute('data-bg-color');
-    let textColor = elem.getAttribute('data-text-color');
-
-    ScrollTrigger.create({
-      trigger: elem,
-      start: 'top top',
-      end: 'bottom -100',
-      onEnter: () => gsap.to(elem, {
-        backgroundColor: bgColor,
-        color: textColor
-      }),
-      onLeave: () => gsap.to(elem, {
-        backgroundColor: defaultBgColor,
-        color: defaultTextColor
-      }),
-      onLeaveBack: () => gsap.to(elem, {
-        backgroundColor: defaultBgColor,
-        color: defaultTextColor
-      }),
-      onEnterBack: () => gsap.to(elem, {
-        backgroundColor: bgColor,
-        color: textColor
-      }),
-      markers: debug
-    });
-
-  });
 
 
 
@@ -262,6 +232,38 @@ window.addEventListener('DOMContentLoaded', function() {
   })
 
 
+
+});
+
+gsap.utils.toArray(".colorChange").forEach(function(elem) {
+
+  let defaultBgColor = elem.getAttribute('data-default-bg-color');
+  let defaultTextColor = elem.getAttribute('data-default-text-color');
+  let bgColor = elem.getAttribute('data-bg-color');
+  let textColor = elem.getAttribute('data-text-color');
+
+  ScrollTrigger.create({
+    trigger: elem,
+    start: 'top top',
+    end: 'bottom -100',
+    onEnter: () => gsap.to(elem, {
+      backgroundColor: bgColor,
+      color: textColor
+    }),
+    onLeave: () => gsap.to(elem, {
+      backgroundColor: defaultBgColor,
+      color: defaultTextColor
+    }),
+    onLeaveBack: () => gsap.to(elem, {
+      backgroundColor: defaultBgColor,
+      color: defaultTextColor
+    }),
+    onEnterBack: () => gsap.to(elem, {
+      backgroundColor: bgColor,
+      color: textColor
+    }),
+    markers: debug
+  });
 
 });
 
