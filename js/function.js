@@ -261,30 +261,31 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   })
 
-  function showDivPol() {
-    document.getElementById('PolCard').style.display = "block";
-    $("body").css("overflow", "hidden");
-  };
 
-  function hideDiv() {
-    document.getElementById('PolCard').style.display = "none";
-    document.getElementById('HealthCard').style.display = "none";
-    document.getElementById('ViolenceCard').style.display = "none";
-    $("body").css("overflow", "scroll");
-  }
-
-  function showDivHealth() {
-    document.getElementById('HealthCard').style.display = "block";
-    $("body").css("overflow", "hidden");
-  };
-
-  function showDivViolence() {
-    document.getElementById('ViolenceCard').style.display = "block";
-    $("body").css("overflow", "hidden");
-  };
 
 });
 
+function showDivPol() {
+  document.getElementById('PolCard').style.display = "block";
+  $("body").css("overflow", "hidden");
+};
+
+function hideDiv() {
+  document.getElementById('PolCard').style.display = "none";
+  document.getElementById('HealthCard').style.display = "none";
+  document.getElementById('ViolenceCard').style.display = "none";
+  $("body").css("overflow", "scroll");
+}
+
+function showDivHealth() {
+  document.getElementById('HealthCard').style.display = "block";
+  $("body").css("overflow", "hidden");
+};
+
+function showDivViolence() {
+  document.getElementById('ViolenceCard').style.display = "block";
+  $("body").css("overflow", "hidden");
+};
 // const modal = document.querySelector('.modal');
 //
 // const showModal = document.querySelector('.show-modal');
