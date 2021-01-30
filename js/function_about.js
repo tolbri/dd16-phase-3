@@ -20,33 +20,33 @@ Promise.all([d3.html("./about.html"), d3.html("./assets/svg/menu.svg")])
     })
 
     selected.on("mouseleave", function() {
-      d3.select(this).select("path").style("fill", "#bdbdbd");
-      d3.select(this).select("rect").style("fill", "#bdbdbd");
+      d3.select(this).select("path").style("fill", "#e9e9e9");
+      d3.select(this).select("rect").style("fill", "#e9e9e9");
     })
 
     d3.select("#Name").on('click',function(e){
         e.preventDefault();
-        $("html, body").animate({ scrollTop: $('#section_name').offset().top }, 1000);
+        $("html, body").animate({ scrollTop: $('#pinkZoom').offset().top }, 1000);
       });
 
       d3.select("#Research").on('click',function(e){
           e.preventDefault();
-          $("html, body").animate({ scrollTop: $('#section_research').offset().top }, 1000);
+          $("html, body").animate({ scrollTop: $('#redZoom').offset().top }, 1000);
         });
 
         d3.select("#Concept").on('click',function(e){
             e.preventDefault();
-            $("html, body").animate({ scrollTop: $('#section_concept').offset().top }, 1000);
+            $("html, body").animate({ scrollTop: $('#purpleZoom').offset().top }, 1000);
           });
 
           d3.select("#Output").on('click',function(e){
               e.preventDefault();
-              $("html, body").animate({ scrollTop: $('#section_output').offset().top }, 1000);
+              $("html, body").animate({ scrollTop: $('#blueZoom').offset().top }, 1000);
             });
 
             d3.select("#Team").on('click',function(e){
                 e.preventDefault();
-                $("html, body").animate({ scrollTop: $('#section_team').offset().top }, 1000);
+                $("html, body").animate({ scrollTop: $('#teamZoom').offset().top }, 1000);
               });
 
 
