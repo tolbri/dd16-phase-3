@@ -27,6 +27,10 @@
         },
         zIndex: {
           '-10': '-10',
+        },
+        animation: {
+          'spin-slower': 'spin 12s linear infinite',
+          'spin-slow': 'spin 8s linear infinite',
         }
       },
       variants: {
