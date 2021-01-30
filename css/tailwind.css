@@ -32443,6 +32443,16 @@ video {
           animation: bounce 1s infinite;
 }
 
+.animate-spin-slower {
+  -webkit-animation: spin 12s linear infinite;
+          animation: spin 12s linear infinite;
+}
+
+.animate-spin-slow {
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -64244,6 +64254,16 @@ video {
   .sm\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .sm\:animate-spin-slower {
+    -webkit-animation: spin 12s linear infinite;
+            animation: spin 12s linear infinite;
+  }
+
+  .sm\:animate-spin-slow {
+    -webkit-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
   }
 }
 
@@ -96049,6 +96069,16 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:animate-spin-slower {
+    -webkit-animation: spin 12s linear infinite;
+            animation: spin 12s linear infinite;
+  }
+
+  .md\:animate-spin-slow {
+    -webkit-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -127852,6 +127882,16 @@ video {
   .lg\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .lg\:animate-spin-slower {
+    -webkit-animation: spin 12s linear infinite;
+            animation: spin 12s linear infinite;
+  }
+
+  .lg\:animate-spin-slow {
+    -webkit-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
   }
 }
 
@@ -159657,6 +159697,16 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .xl\:animate-spin-slower {
+    -webkit-animation: spin 12s linear infinite;
+            animation: spin 12s linear infinite;
+  }
+
+  .xl\:animate-spin-slow {
+    -webkit-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -191460,5 +191510,15 @@ video {
   .\32xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-spin-slower {
+    -webkit-animation: spin 12s linear infinite;
+            animation: spin 12s linear infinite;
+  }
+
+  .\32xl\:animate-spin-slow {
+    -webkit-animation: spin 8s linear infinite;
+            animation: spin 8s linear infinite;
   }
 }

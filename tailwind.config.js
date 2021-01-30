@@ -22,11 +22,15 @@
           'dreamred': '#FD3C3E',
           'dreamblue': '#5EECFD',
           'dreampink': '#F980E6',
-          'dreamdarkblue': '#1D91FF',
+          'dreamdarkblue': '#077AF2',
           'dreampurple': '#A582FB',
         },
         zIndex: {
           '-10': '-10',
+        },
+        animation: {
+          'spin-slower': 'spin 12s linear infinite',
+          'spin-slow': 'spin 8s linear infinite',
         }
       },
       variants: {
