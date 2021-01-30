@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
     ScrollTrigger.create({
       trigger: goTopTrigger,
       start: 'top top',
-      end: '9999',
+      end: '99999',
       onEnter: () => gsap.to(elem, {
         opacity: 1
       }),
