@@ -9,6 +9,14 @@ window.addEventListener('DOMContentLoaded', function() {
   loader.addClass("hidden");
   $("body").removeClass("overflow-hidden");
 
+  // scroll back to top
+  d3.select("#back-to-top").on('click', function(e) {
+    e.preventDefault();
+    $("html, body").animate({
+      scrollTop: $('body').offset().top
+    }, 1000);
+  });
+
   let container = document.getElementById("horizontal-scroll");
   if (container) {
     gsap.to(container, {
