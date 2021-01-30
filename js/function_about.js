@@ -61,6 +61,13 @@ $('document').ready(function() {
         }, 1000);
       });
 
+      d3.select("#back-to-top").on('click', function(e) {
+        e.preventDefault();
+        $("html, body").animate({
+          scrollTop: $('body').offset().top
+        }, 1000);
+      });
+
 
     })
 });
