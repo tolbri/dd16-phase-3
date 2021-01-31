@@ -13,6 +13,7 @@
           'sans': ['Sporting Grotesque']
         },
         fontSize: {
+          "lg": ['1.125rem', '2.2rem'],
           "3xl": ['1.875rem', '3.4rem'], // first value is the size, second one the line height
           "6xl": ['3.75rem', '4.5rem'],
         },
