@@ -1,6 +1,33 @@
 gsap.registerPlugin(ScrollTrigger)
 let debug = false;
 
+
+
+window.addEventListener('scroll', function() {
+    console.log(window.pageYOffset);
+    let scrollBottom = window.pageYOffset;
+    if (scrollBottom <3800) {
+      document.getElementById('ser').style.backgroundColor= '#000000';
+      document.getElementById('sel').style.backgroundColor= '#edf2f7';
+      document.getElementById('sel').style.color= '#000000';
+
+    } else if ((scrollBottom <8600) || ((scrollBottom <29000) && (scrollBottom >26500))){
+      document.getElementById('ser').style.backgroundColor= '#edf2f7';
+      document.getElementById('sel').style.backgroundColor= '#000000';
+      document.getElementById('sel').style.color= '#edf2f7';
+    }
+     else if (scrollBottom >30550) {
+       document.getElementById('ser').style.backgroundColor= '#edf2f7';
+       document.getElementById('sel').style.backgroundColor= '#000000';
+       document.getElementById('sel').style.color= '#edf2f7';
+    } else {
+      document.getElementById('ser').style.backgroundColor= '#000000';
+     document.getElementById('sel').style.backgroundColor= '#edf2f7';
+     document.getElementById('sel').style.color= '#000000';
+    }
+});
+
+
 window.addEventListener('DOMContentLoaded', function() {
   console.log("Function Loaded!");
 
