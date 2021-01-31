@@ -1,5 +1,12 @@
   module.exports = {
-    purge: [],
+    purge: {
+      enabled: false,
+      content: [
+        './index.html',
+        './about.html',
+        './js/*.js'
+      ]
+    },
     darkMode: false, // or 'media' or 'class'
     theme: {
       cursor: {
