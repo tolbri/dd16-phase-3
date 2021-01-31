@@ -1,3 +1,12 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .list-outside{
 list-style-image: url("../assets/img/list_point.svg");
 list-style-position: inside
@@ -19,7 +28,66 @@ h3:hover {
   a:hover {
     cursor: url("../assets/svg/arrowhover_3.png"), auto;
   }
+  .article:hover{
+    cursor: url("../assets/svg/arrowhover_3.png"), auto;    
+  }
 
+  #duet_label {
+    display:none;
+  }
+
+  #duet:hover + #duet_label {
+    display:block;
+  }
+
+  #stitch_label {
+    display:none;
+  }
+
+  #stitch:hover + #stitch_label{
+    display:block;
+  }
+
+  #sing_label {
+    display:none;
+  }
+
+  #sing:hover + #sing_label{
+    display:block;
+  }
+
+  #greenscreen_label {
+    display:none;
+  }
+
+  #greenscreen:hover + #greenscreen_label{
+    display:block;
+  }
+
+
+  #dance_label {
+    display:none;
+  }
+
+  #dance:hover + #dance_label {
+    display:block;
+  }
+
+  #pov_label {
+    display:none;
+  }
+
+  #pov:hover + #pov_label {
+    display:block;
+  }
+
+  #ans_questions_label {
+    display:none;
+  }
+
+  #ans_questions:hover + #ans_questions_label{
+    display:block;
+  }
 
   button:focus { outline: none; }
 
