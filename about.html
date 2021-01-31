@@ -15,7 +15,7 @@
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bg-gray-200 overflow-hidden">
+<body class="bg-gray-200" style="overflow-x:hidden">
 
 <!-- LOADER -->
   <div id="loader" class="flex w-screen h-screen fixed bg-white z-50 bg-white">
@@ -34,12 +34,13 @@
     </div>
   </div>
 
-  <div id="back-to-top" class="fixed bottom-0 left-0 p-4 z-50 opacity-0">
-    <button class="lg:w-16 w-12">
-      <img src="assets/svg/back-to-top.svg" alt="back to top" class="h-full w-full m-auto"/>
-    </button>
+  <div id="back-to-top" class="fixed bottom-0 left-0 p-4 w-screen flex flex-row rounded-full p-4 z-40 opacity-0">
+    <div class="border-1 border-black bg-black rounded-full">
+        <button class="w-16 h-16 transform translate-x-1 -translate-y-1 hover:translate-y-0 hover:translate-x-0 align-bottom text-center border-2 rounded-full border-black bg-gray-200">
+          <img src="assets/svg/back-to-top.svg" alt="back to top" class="h-full w-full m-auto"/>
+        </button>
+    </div>
   </div>
-
 
 
     <!-------------------------->
@@ -141,33 +142,40 @@
     <div class="relative flex-col w-full lg:p-20 pb-60">
       <div class="gap-4 grid lg:grid-cols-7 grid-cols-3">
         <div class="">
-          <img src="./assets/svg/answering_question.gif"/>
+          <img id="ans_questions" src="./assets/svg/answering_question.gif"/>
+          <span id="ans_questions_label" class="absolute top-12 left-40 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(-30%,0)">ANSWERING QUESTIONS</span>
         </div>
         <div class=""></div>
         <div class="">
-          <img src="./assets/svg/duet.gif"/>
+          <img id="duet" src="./assets/svg/duet.gif"> </img>
+          <span id="duet_label" class="absolute top-12 left-1/3 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(-30%,0)">DUET</span>
         </div>
         <div class=""></div>
         <div class="">
-          <img src="./assets/svg/dance.gif"/>
+          <img id="dance" src="./assets/svg/dance.gif"/>
+          <span id="dance_label" class="absolute top-12 left-2/3 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(-130%,0)">DANCE</span>
         </div>
         <div class=""></div>
         <div class="">
-          <img src="./assets/svg/pov.gif"/>
+          <img id="pov" src="./assets/svg/pov.gif"/>
+          <span id="pov_label" class="absolute top-12 right-48 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(50%,0)">POV</span>
         </div>
       </div>
     <div class="grid lg:grid-cols-7 grid-cols-3 gap-4">
         <div class=""></div>
         <div class="">
-          <img src="./assets/svg/green_screen.gif"/>
+          <img id="greenscreen" src="./assets/svg/green_screen.gif"/>
+          <span id="greenscreen_label" class="absolute bottom-12 left-60 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(0%,0%)">GREEN SCREEN</span>
         </div>
         <div class=""></div>
         <div class="">
-          <img src="./assets/svg/stitch.gif"/>
+          <img id="stitch" src="./assets/svg/stitch.gif"/>
+          <span id="stitch_label" class="absolute bottom-12 left-1/2 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(-80%,0%)">STITCH</span>
         </div>
         <div class=""></div>
         <div class="">
-          <img src="./assets/svg/sing.gif"/>
+          <img id="sing" src="./assets/svg/sing.gif"/>
+          <span id="sing_label" class="absolute bottom-12 right-80 border-2 border-black rounded-2xl px-2 whitespace-nowrap z-10 bg-white" style="transform:translate(0%,0%)">SING</span>
         </div>
         <div class=""></div>
       </div>
@@ -186,15 +194,15 @@
         <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">three biggest conspiracy</span>
         theories of 2020.
       </p>
-      <div class="flex flex-row flex-wrap h-auto">
-        <div class="lg:w-1/3 w-full">
-          <img src="assets/svg/greysec3-greyellipse.svg" class=""/>
+      <div class="flex flex-row h-auto">
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-conspiracy1.svg" class=""/>
         </div>
-        <div class="lg:w-1/3 w-full">
-          <img src="assets/svg/greysec3-greyellipse.svg" class=""/>
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-conspiracy2.svg" class=""/>
         </div>
-        <div class="lg:w-1/3 w-full">
-          <img src="assets/svg/greysec3-greyellipse.svg" class=""/>
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-conspiracy3.svg" class=""/>
         </div>
       </div>
     </div>
@@ -214,9 +222,9 @@
         <div id="horizontal-scroll" class="flex flex-wrap flex-col">
           <div class="text-center flex justify-start lg:ml-20 pl-4">
             <div class="relative my-auto lg:h-1/4 h-1/2 w-auto pt-20">
-              <p class="absolute -bottom-10 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">coronavirus related</p>
+              <p class="lg:text-3xl md:text-5xl text-lg absolute -bottom-1/3 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">coronavirus related</p>
             </div>
-            <img src="./assets/svg/coronavirus_1.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
+        <!--    <img src="./assets/svg/coronavirus_1.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/coronavirus_2.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/coronavirus_3.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/coronavirus_4.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
@@ -224,7 +232,7 @@
             <img src="./assets/svg/coronavirus_6.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/coronavirus_7.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <div class="relative my-auto lg:h-1/4 h-1/2 w-auto">
-              <p class="absolute -bottom-10 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">QAnon</p>
+              <p class="lg:text-3xl md:text-5xl text-lg absolute -bottom-1/3 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">QAnon</p>
             </div>
             <img src="./assets/svg/qanon_1.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/qanon_2.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
@@ -234,13 +242,13 @@
             <img src="./assets/svg/qanon_6.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/qanon_7.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <div class="relative my-auto lg:h-1/4 h-1/2 w-auto">
-              <p class="absolute -bottom-10 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">Rigged Presidential Election</p>
+              <p class="lg:text-3xl md:text-5xl text-lg absolute -bottom-1/3 left-0 z-20 border-2 border-black rounded-2xl px-2 overflow-visible whitespace-nowrap">Rigged Presidential Election</p>
             </div>
             <img src="./assets/svg/election_1.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/election_2.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/election_3.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
             <img src="./assets/svg/election_4.gif" class="my-auto lg:h-1/4 h-1/2 w-auto mr-3"/>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -250,15 +258,15 @@
       <p class="lg:text-3xl md:text-5xl text-lg z-10 py-4">
       Using the dataset created we analysed different videos, following 3 criteria proposed by <a href="https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/fighting-disinformation/identifying-conspiracy-theories_en" class="underline hover:text-white">The European Commission and UNESCO</a> for identifying, debunking and countering conspiracy theories.
       </p>
-      <div class="flex flex-row flex-wrap  h-auto">
-        <div class="lg:w-1/3 w-full">
-          <img src="assets/svg/greysec3-greyellipse.svg" class=""/>
+      <div class="flex flex-row h-auto">
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3-unverified.svg" class=""/>
         </div>
-        <div class="lg:w-1/3 w-full">
-          <img src="assets/svg/greysec3-greyellipse.svg" class=""/>
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3_facts.svg" class=""/>
         </div>
-        <div class="lg:w-1/3 w-full">
-          <img src="assets/svg/greysec3-greyellipse.svg" class=""/>
+        <div class="w-1/3">
+          <img src="assets/svg/greysec3_bias.svg" class=""/>
         </div>
       </div>
     </div>
@@ -277,17 +285,17 @@
         <div id="horizontal-scroll-2" class="flex flex-wrap flex-col">
           <div class="text-center flex justify-left lg:ml-20 pt-20 pl-4 w-auto">
 
-<img src="./assets/articles_consequences/1.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/2.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/3.png" class="my-auto lg:h-1/2 h-1/2  w-auto mr-3"/>
-<img src="./assets/articles_consequences/4.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/5.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/6.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/7.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/8.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/9.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/10.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-3"/>
-<img src="./assets/articles_consequences/11.png" class="my-auto lg:h-1/2 h-1/2 w-auto mr-40"/>
+<img src="./assets/articles_consequences/1.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.nbcnews.com/tech/internet/online-far-right-movements-fracture-wake-capitol-riot-n1254459');"/>
+<img src="./assets/articles_consequences/2.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.bbc.com/news/blogs-trending-54440973', '_blank');"/>
+<img src="./assets/articles_consequences/3.png" class="article my-auto lg:h-1/2 h-1/2  w-auto mr-3" onclick="window.open('https://www.bbc.com/news/blogs-trending-54440973', '_blank');"/>
+<img src="./assets/articles_consequences/4.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://time.com/5887437/conspiracy-theories-2020-election/', '_blank');"/>
+<img src="./assets/articles_consequences/5.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://globalnews.ca/news/6718358/tiktok-toilet-seat-lick-coronavirus/', '_blank');"/>
+<img src="./assets/articles_consequences/6.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.thedailybeast.com/how-wearing-a-face-mask-or-not-became-the-dumbest-culture-war', '_blank');"/>
+<img src="./assets/articles_consequences/7.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.insider.com/tiktok-roelplayers-pretend-side-effects-covid-vaccine-2020-10', '_blank');"/>
+<img src="./assets/articles_consequences/8.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.cnet.com/news/fake-5g-coronavirus-theories-have-real-world-consequences/', '_blank');"/>
+<img src="./assets/articles_consequences/9.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.theguardian.com/us-news/2020/oct/15/qanon-violence-crimes-timeline', '_blank');"/>
+<img src="./assets/articles_consequences/10.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-3" onclick="window.open('https://www.theguardian.com/us-news/2020/oct/15/qanon-violence-crimes-timeline', '_blank');"/>
+<img src="./assets/articles_consequences/11.png" class="article my-auto lg:h-1/2 h-1/2 w-auto mr-40" onclick="window.open('https://www.theguardian.com/us-news/2020/oct/15/qanon-violence-crimes-timeline', '_blank');"/>
 <div class="px-24"></div>
 
           </div>
@@ -351,7 +359,7 @@
 
     <div id="end-concept" class="relative flex h-screen w-full lg:p-20 px-4 text-left bg-dreampurple">
       <p class="lg:text-3xl md:text-5xl text-lg z-10">
-        F.A.C.T. is   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">warning</span> you to be careful of conspiracy videos on TikTok: they’re difficult to recognize and even if they’re funny and engaging they shouldn’t be underestimated. Falling into a conspiracy video loop could have   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">unfortunate consequences.</span>
+        F.A.C.T. is <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">warning</span> you to be careful of conspiracy videos on TikTok: they’re difficult to recognize and even if they’re funny and engaging they shouldn’t be underestimated. Falling into a conspiracy video loop could have   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">unfortunate consequences.</span>
       </p>
     </div>
     <!-------------------------->
@@ -412,7 +420,7 @@ to use was pretty easy: use a young and fresh language that resembles the way in
 
     <div id="end-giulia" class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreamdarkblue panel" data-ending="end-giulia">
       <p class="lg:text-3xl md:text-5xl text-lg z-10">
-The result is that on TikTok conspiracy theories’ contents appear very similar to any other kind of content      </p>
+The result is that on TikTok conspiracy theories’ contents appear very similar to any other kind of content </p>
     </div>
     <div class="py-20 bg-dreamdarkblue">
     </div>
@@ -421,25 +429,6 @@ The result is that on TikTok conspiracy theories’ contents appear very similar
         Following that also the visual language needed to be coherent, that lead to the decision of a   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">bright color palette</span> matched with a   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">rounded font</span> like the “Sporting” from Velvetine Foundry. The use of a set of shapes that recreate   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">stickers</span> (a visual asset also used on the platform) is used throughout the website and videos to give movement and present useful information in a catchy way.
       </p>
     </div>
-
-    <div class="relative h-screen w-full z-10 overflow-hidden">
-    <div class="a-container">
-        <img class="item" src="assets/img/floating-triangle.svg"></img>
-    </div>
-    <div class="b-container">
-        <img class="item b" src="assets/img/floating-square.png"></img>
-    </div>
-    <div class="c-container">
-        <img class="item c" src="assets/img/floating-circle.png"></img>
-    </div>
-    <div class="d-container">
-        <img class="item d" src="assets/img/floating-ellipse.png"></img>
-    </div>
-    <div class="e-container">
-        <img class="item e" src="assets/img/floating-star1.png"></img>
-    </div>
-    </div>
-
     <div id="end-shapes" class="relative flex h-screen w-full lg:p-20 p-4 text-left bg-dreamdarkblue">
       <p class="lg:text-3xl md:text-5xl text-lg z-10">
         The wide amount of videos offered by the platform made it easy to choose them as the main content of the   <span class="border-2 border-black rounded-2xl px-2 whitespace-nowrap">explanatory videos</span>, also to maintain the idea of explaining the platform through the platform.
@@ -481,16 +470,14 @@ The result is that on TikTok conspiracy theories’ contents appear very similar
     <!-------------------------->
     <div class="flex flex-row flex-wrap lg:h-64 bg-black text-gray-200 text-sm lg:text-left text-center">
       <div class="lg:w-2/5 p-5 w-full">
-          <br>
-        <img src="assets/img/polilogo.png" class="h-12 mx-auto" />
-        <br>
-        <img src="assets/img/densitylogo.png" class="w-20 mx-auto" />
+        <img src="assets/img/polilogo.png" class="h-12 mt-4 mx-auto"/>
+        <img src="assets/img/densitylogo.png" class="w-12 mt-4 mx-auto" />
       </div>
       <div class="flex lg:w-1/5 w-full p-5">
         <div class="my-auto mx-auto">
         <h6>Project by</h6>
         <ul>
-          <br>
+          <br/>
           <li>Giulia Baraldi</li>
           <li>Cecilia Gaetarelli</li>
           <li>Alia Kaouel</li>
@@ -518,6 +505,7 @@ The result is that on TikTok conspiracy theories’ contents appear very similar
       </div>
       <div class="flex lg:w-1/5 w-full p-5">
         <div class="my-auto mx-auto">
+        <br>
         <h6>Teaching Assistants</h6>
         <ul>
           <br>
