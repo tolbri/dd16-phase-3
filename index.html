@@ -113,8 +113,8 @@
   </div>
 
   <div class="relative flex h-screen w-full lg:p-20 p-4 text-center bg-black">
-    <div class="relative my-auto">
-      <h2 class="text-left my-auto mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-white text-white rounded-3xl lg:py-24 py-8 px-12">
+    <div class="relative my-auto mx-auto">
+      <h2 class="text-left my-auto lg:mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-white text-white rounded-3xl lg:py-24 py-8 px-12">
         But do you know what a conspiracy theory is?
       </h2>
       <div class="absolute -bottom-20 right-0">
@@ -147,7 +147,7 @@
 
   <div id="ending-video" class="relative flex h-screen w-full lg:p-20 p-4 text-center bg-black">
     <div class="relative my-auto">
-      <h2 class="text-left my-auto mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-white text-white rounded-3xl lg:py-24 py-8 px-12">
+      <h2 class="text-left my-auto lg:mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-gray-200 text-gray-200 rounded-3xl lg:py-24 py-8 px-12">
         Why are conspiracy theory videos not recognizable?
       </h2>
       <div class="absolute -bottom-20 right-0">
@@ -161,7 +161,7 @@
       <img src="assets/svg/blacksec1-pinkrectangle.svg" alt="star" class="h-full mx-auto"/>
     </div>
     <div class="h-screen absolute flex text-center lg:p-20 p-4 z-10" style="top:0%">
-      <h2 class="pt-20 uppercase my-auto mx-auto lg:text-6xl md:text-5xl text-3xl text-white z-20">
+      <h2 class="pt-20 uppercase my-auto mx-auto lg:text-6xl md:text-5xl text-3xl text-gray-200 z-20">
         Trend format is the way a particular video is made to communicate
       </h2>
     </div>
@@ -402,7 +402,7 @@
 
   <div class="relative flex h-screen w-full lg:p-20 p-4 text-center bg-black">
     <div class="relative my-auto">
-      <h2 class="text-left my-auto mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-white text-white rounded-3xl lg:py-24 py-8 px-12">
+      <h2 class="text-left my-auto lg:mx-24 lg:text-6xl md:text-5xl text-3xl border-2 border-gray-200 text-gray-200 rounded-3xl lg:py-24 py-8 px-12">
         And now you’re probably asking yourself “what’s wrong about that?!”
       </h2>
       <div class="absolute -bottom-20 right-0">
@@ -412,7 +412,7 @@
   </div>
 
   <div id="end-green" class="relative flex h-screen w-full lg:p-20 p-4 text-center bg-black">
-    <h2 class="uppercase my-auto lg:text-6xl md:text-5xl text-3xl z-10 text-white">
+    <h2 class="uppercase my-auto lg:text-6xl md:text-5xl text-3xl z-10 text-gray-200">
       conspiracy theories on tik tok could have dangerous and negative consequences in real life
     </h2>
     <div class="absolute inset-x-0 inset-y-0  lg:p-20 w-screen">
@@ -424,21 +424,21 @@
     <div class="flex justify-between flex-row w-full mx-auto my-auto flex-wrap text-sm">
       <div class="mx-auto">
         <div class="rounded-xl w-auto border-2 border-gray-200 m-5 transform lg:translate-y-40 lg:translate-x-40">
-          <button onclick="showDivPol()" class="rounded-xl show-modal transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
+          <button onclick="showDivPol()" class="rounded-lg show-modal transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
             Politics
           </button>
         </div>
       </div>
       <div class="mx-auto">
         <div class="rounded-xl border-2 border-gray-200 m-5 transform lg:-translate-y-40 lg:-translate-x-40">
-          <button onclick="showDivHealth()" class="rounded-xl transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
+          <button onclick="showDivHealth()" class="rounded-lg transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
             Health
           </button>
         </div>
       </div>
       <div class="mx-auto">
         <div class="rounded-xl border-2 border-gray-200 m-5 transform lg:-translate-x-40">
-          <button onclick="showDivViolence()" class="rounded-xl transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
+          <button onclick="showDivViolence()" class="rounded-lg transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
             Violence
           </button>
         </div>
@@ -643,21 +643,27 @@
     <div class="flex justify-between flex-row w-full mx-auto my-auto flex-wrap text-sm">
       <div class="mx-auto">
         <div class="w-auto border-2 border-gray-200 m-5 transform lg:translate-y-40 lg:translate-x-40 rounded-xl">
-          <button onclick="window.open('https://www.tiktok.com/@mediawise?source=h5_t','_blank')"  class="transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200 rounded-xl">
+          <button
+            onclick="window.open('https://www.tiktok.com/@mediawise?source=h5_t','_blank')"
+            class="transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200 rounded-lg">
             @mediawise
           </button>
         </div>
       </div>
       <div class="mx-auto">
         <div class=" rounded-xl border-2 border-gray-200 m-5 transform lg:-translate-y-40 lg:-translate-x-40">
-          <button onclick="window.open('https://www.tiktok.com/@tofology?lang=en','_blank')" class="rounded-xl transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
+          <button
+            onclick="window.open('https://www.tiktok.com/@tofology?lang=en','_blank')"
+            class="rounded-lg transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
             @tofology
           </button>
         </div>
       </div>
       <div class="mx-auto">
         <div class="rounded-xl border-2 border-gray-200 m-5 transform lg:-translate-x-40">
-          <button onclick="window.open('https://www.tiktok.com/@tiktoktips?lang=en','_blank')" class="rounded-xl transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
+          <button
+            onclick="window.open('https://www.tiktok.com/@tiktoktips?lang=en','_blank')"
+            class="rounded-lg transform translate-x-2 translate-y-2 hover:translate-y-0 hover:translate-x-0 text-center h-24 px-8 lg:w-64 uppercase border-2 border-gray-200 bg-gray-200">
             @tiktoktips
           </button>
         </div>
