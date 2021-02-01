@@ -1,6 +1,16 @@
 gsap.registerPlugin(ScrollTrigger)
 let debug = false;
 
+$(window).on('scroll', function() {
+      if ($(window).scrollTop() >= $(
+        '#start').offset().top + $('#start').
+          outerHeight() - window.innerHeight) {
+            document.getElementById('ser').style.backgroundColor= '#000000';
+            document.getElementById('sel').style.backgroundColor= '#edf2f7';
+            document.getElementById('sel').style.borderColor= '#000000';
+            document.getElementById('sel').style.color= '#000000';
+      }
+  });
 
 $(window).on('scroll', function() {
       if ($(window).scrollTop() >= $(
@@ -56,6 +66,7 @@ $(window).on('scroll', function() {
                     document.getElementById('sel').style.color= '#edf2f7';
               }
           });
+
 
 window.addEventListener('DOMContentLoaded', function() {
   console.log("Function Loaded!");
