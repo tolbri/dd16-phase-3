@@ -29,8 +29,12 @@ h3:hover {
     cursor: url("../assets/svg/arrowhover_3.png"), auto;
   }
   .article:hover{
-    cursor: url("../assets/svg/arrowhover_3.png"), auto;    
+    cursor: url("../assets/svg/arrowhover_3.png"), auto;
   }
+
+video {
+  outline:none;
+}
 
   #duet_label {
     display:none;
