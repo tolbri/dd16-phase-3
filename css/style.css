@@ -364,178 +364,59 @@ video {
   animation-iteration-count: infinite;
   animation-duration: 7s;
 }
-/* Look at https://tailwindcss.com/ to style the website*/
 
-/*------------------------------- */
-/*---- Scroll Down Animation ---- */
-/*------------------------------- */
-/* #scroll-down a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
-  -webkit-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-  -webkit-animation: sdb06 1.5s infinite;
-  animation: sdb06 1.5s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb06 {
-  0% {
-    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb06 {
-  0% {
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
+#ceci_gif {
+  display:none;
 }
 
-#diverso, #container_2, #container_3{
-  width: 100%;
-  height: 100%;
-  position: relative;
+#ceci_star:hover + #ceci_gif {
+  display:block;
 }
 
-#navi, #ellisse_ferma, #navi_2 {
-  width: 100%;
-  height:100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+#ale_gif {
+  display:none;
 }
 
-#toolbox, #covid_scrolling{
-  width: 100%;
-  height:100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 0;
-  box-sizing: border-box;
+#ale_star:hover + #ale_gif {
+  display:block;
 }
 
-#intro2{
-  width: 100%;
-  height: 100vh;
-  padding-top: 0%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 10;
-  color: white;
+#vera_gif {
+  display:none;
 }
 
-.slides {
-  position: relative;
-  transform:translate(-50%, -50%);
-  top:50%;
-  left:50%;
-  text-align: center;
+#vera_star:hover + #vera_gif {
+  display:block;
 }
 
-.centred {
-  position: relative;
-  transform:translate(-50%, -50%);
-  left:50%;
-  text-align: center;
+#vale_gif {
+  display:none;
 }
 
-#quadrato {
-  height: 50vh;
-  width: calc(50vh);
-  position:relative;
-  background-color: #ffffff;
-  transform:translate(-50%,-50%) rotate(60deg);
-  top:50%;
-  left:50%;
-  z-index:0;
-  margin:0;
+#vale_star:hover + #vale_gif {
+  display:block;
 }
 
-#oval {
-  height: 80vh;
-  width: 50vh;
-  position:relative;
-  background-color: #ffffff;
-  transform:translate(-50%,-50%) rotate(60deg);
-  top:50%;
-  left:50%;
-  z-index:0;
-  margin:0;
-  border-radius: 50%;
+#giulia_gif {
+  display:none;
 }
 
-
-#back {
-  border:none;
-  transform:scale(0.5);
-  position: fixed;
-  top:0%;
-  left:0%;
-  margin:2vh;
-  z-index: 100;
+#giulia_star:hover + #giulia_gif {
+  display:block;
 }
 
-button:focus { outline: none; }
+#alia_gif {
+  display:none;
+}
 
- */
+#alia_star:hover + #alia_gif {
+  display:block;
+}
 
+#tim_gif {
+  display:none;
+}
 
-
-
-/* TEST STYLES */
-
-/* main {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:column;
-  height:100vh;
-  will-change: transform;
-} */
-
-/* section {
-  background: blue;
-  height:100%;
-  display:flex;
-  width: 60vw;
-  margin-right: 4vw;
-} */
-
-/* section:nth-child(2n) {
-  background: #eee;
-
-} */
-
-/* div {
-  height: 80vh;
-  padding: 5%;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  width: 100%;
-  overflow-x: hidden;
-} */
+#tim_star:hover + #tim_gif {
+  display:block;
+}
